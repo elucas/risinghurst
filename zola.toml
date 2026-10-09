@@ -1,5 +1,7 @@
 # The URL the site will be built for
-base_url = "http://risinghurst.localdomain"
+base_url = "https://elucas.github.io/risinghurst/"
+
+output_dir = "docs"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false

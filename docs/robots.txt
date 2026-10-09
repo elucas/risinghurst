@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: https://elucas.github.io/risinghurst/sitemap.xml
