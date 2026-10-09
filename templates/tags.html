@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{# https://abithakt.gitlab.io/blog/zola-tags/ #}
+{% block main_content %}
+<header>
+    <h1 class="page-header">
+        Tags
+    </h1>
+</header>
+
+
+<section>
+    {{ page.content | safe }}
+</section>
+
+{% set monthtags = get_taxonomy(kind="months") %}
+{% set tags_by_count = monthtags.items | sort(attribute="page_count") %}
+{% set least_pop_tag = tags_by_count | first %}
+{% set lowest_weight = least_pop_tag.page_count %}
+{% set most_pop_tag = tags_by_count | last %}
+{% set highest_weight = most_pop_tag.page_count %}
+
+{% set manual_order = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"] %}
+
+{# tag cloud #}
+<h3>Months</h3>
+{% for ordered_slug in manual_order %}
+{% for tag in monthtags.items %}
+{% if tag.name == ordered_slug %}
+<span>
+    <a
+        href="#{{ tag.name | slugify }}"
+        style="font-size: calc(1rem + ({{ tag.page_count }} - {{ lowest_weight }}) / ({{ highest_weight }} - {{ lowest_weight }}) * 1rem);"
+        >{{ tag.name }}</a>
+        {%- if not loop.last %}{{ ", " | safe }}{% endif -%}
+</span>
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+<ul class="tag-list">
+  {# First, loop through your manual order #}
+  {% for ordered_slug in manual_order %}
+    {% for term in monthtags.items %}
+      {% if term.name == ordered_slug %}
+        <li><a href="{{ term.permalink }}">{{ term.name }}</a> <small>{{ term.page_count }} page{{ term.page_count | pluralize }}</small></li>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+
+  {# Optional: Loop again to catch any terms you forgot to include in the manual list #}
+  {% for term in monthtags.items %}
+    {% if term.name not in manual_order %}
+      <li><a href="{{ term.permalink }}">{{ term.name }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+
+<h3>Categories</h3>
+{% set tag_categories = get_taxonomy(kind="categories") %}
+<ul class="tag-list">
+    {% for tag in tag_categories.items %}
+      <li>
+          <a href="{{ tag.permalink }}">{{ tag.name }}</a>
+          <small>{{ tag.page_count }} page{{ tag.page_count | pluralize }}</small>
+      </li>
+  {% endfor %}
+</ul>
+
+<h3>Kingdom</h3>
+{% set tag_kingdom = get_taxonomy(kind="kingdom") %}
+<ul class="tag-list">
+    {% for tag in tag_kingdom.items %}
+      <li>
+          <a href="{{ tag.permalink }}">{{ tag.name }}</a>
+          <small>{{ tag.page_count }} page{{ tag.page_count | pluralize }}</small>
+      </li>
+  {% endfor %}
+</ul>
+
+{% endblock main_content %}

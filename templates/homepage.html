@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% component home_page(section: map) %}
+<main>
+    <article>
+        <section class="body">
+            {% if section.title %}
+                {{<post.page_header title={section.title} />}}
+            {% endif %}
+            {{ section.content | safe }}
+        </section>
+    </article>
+
+    {% set thumbs = load_data(path="thumbnails.json") %}
+    {% if thumbs %}
+        <section class="thumbs">
+            <!--<h2>Posters in the park:</h2>-->
+            {% for key, thumb in thumbs %}
+            <article class="poster">
+
+                <h5>
+                    <!--{{thumb.year}} - {{thumb.month}} | -->
+                    {{key}}</h5>
+                <div class="pdf-thumbs">
+                    {% for fname in thumb.thumbnails %}
+                    <a href="/pdfs/{{key}}" class="bare" target="_blank" title="Download PDF {{key}}"><img src="/thumbnails/{{fname}}" loading="lazy" alt="Thumbnail for {{key}}"></a>
+                    {% endfor %}
+                </div>
+
+                <!--{{thumb}}-->
+            </article>
+            {% endfor %}
+        </section>
+    {% endif %}
+</main>
+{% endcomponent home_page %}
+
+{% block main_content %}
+    {{<home_page section={section} />}}
+{% endblock main_content %}

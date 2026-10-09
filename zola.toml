@@ -1,0 +1,63 @@
+# The URL the site will be built for
+base_url = "http://risinghurst.localdomain"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = false
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+default_language = "en"
+theme = "apollo"
+
+taxonomies = [
+    {name = "years", feed = true},
+    {name = "months", feed = true},
+    {name = "kingdom", feed = true},
+    {name = "categories", feed = true},
+    {name = "pdfs", feed = true},
+]
+taxonomy_root = "tags"
+
+generate_sitemap = true
+
+[slugify]
+paths = "on"
+taxonomies = "on"
+anchors = "on"
+
+[search]
+include_title = true
+include_description = true
+include_path = true
+include_content = true
+index_format = "elasticlunr_json"
+
+[markdown]
+
+[markdown.highlighting]
+theme = "catppuccin-mocha"
+
+
+
+
+[extra]
+# Put all your custom variables here
+
+theme = "auto"
+socials = []
+# menu = []
+#'species'
+menu = [
+    { name = "Home", url = "/", weight = 0 },
+    { name = "Species", url = "/species", weight = 1 },
+    # { name = "Months", url = "/tags/months", weight = 2 },
+    { name = "Tags", url = "/tags", weight = 3 },
+    # { name = "/projects", url = "/projects", weight = 2 },
+    { name = "About", url = "/about", weight = 4 },
+]
+
+stylesheets = ["risinghurst.css"]
+
+
+[extra.analytics]
+enabled = false
