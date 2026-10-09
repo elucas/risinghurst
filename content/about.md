@@ -1,7 +1,7 @@
 +++
 title = "About this site"
 +++
-For a number of years before they passed, Peter Jacques and his partner Barbara made posters sharing information about the flora and fauna of Risinghurst through the seasons.
+For a number of years before they passed, Peter Jacques and his wife Barbara Wharton made posters sharing information about the flora and fauna of Risinghurst through the seasons.
 
 We are lucky enough to have a small fraction of these posters - When they found out my partner was mostly bed-bound they posted extra copies through our door, so that we didn't miss out on what was happening. **Thank you both.**
 
