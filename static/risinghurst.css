@@ -109,3 +109,12 @@ ul.tag-list {
 small {
     color: #999;
 }
+
+ul.observed-species {
+    list-style: none;
+    padding: 0;
+
+    li {
+        margin-bottom: 2rem;
+    }
+}

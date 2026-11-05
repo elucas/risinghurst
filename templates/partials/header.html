@@ -275,6 +275,20 @@
         {% endfor %}
     {% endif %}
 
+    <style type="text/css">
+    @media print {
+        nav#top {
+            display: none;
+        }
+
+        .page-header {
+            font-size: 2.5em;
+            line-height: 100%;
+            font-family: "ZedDisplayFtl" "Space Grotesk", "Helvetica", sans-serif;
+        }
+    }
+    </style>
+
     {# Search #}
     {%- if config.build_search_index -%}
         {%- if config.search.index_format -%}
