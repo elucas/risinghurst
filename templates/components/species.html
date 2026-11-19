@@ -1,0 +1,77 @@
+{#
+  Species components. Every lookup is by Scientific Name:
+    data/species.json  Scientific Name -> {slug, title}       (committed, from make_species_pages.py)
+    data/wiki.json     Scientific Name -> Wikipedia summary  (fetched, git-ignored; may be absent)
+#}
+
+{#
+  species.card: name + photo + text for one Species.
+    sci       Scientific Name (the join key)
+    fragment  optional Fragment page; its body replaces the Wikipedia text and its
+              extra.image (if any) replaces the Wikipedia photo
+    size      "full" (whole Wikipedia extract), "compact" (short description), "mini" (name/photo only)
+    note      optional extra line under the name, e.g. "2 observations · 8 Oct"
+    title     display name override (defaults to the species page title)
+#}
+{% component species.card(sci: string, fragment: map = {}, size: string = "compact", note: string = "", title: string = "") %}
+{% set wiki_all = load_data(path="data/wiki.json", required=false) or {} %}
+{% set index = load_data(path="data/species.json", required=false) or {} %}
+{% set w = none %}{% if sci in wiki_all %}{% set w = wiki_all[sci] %}{% endif %}
+{% set href = "" %}{% set name = title %}
+{% if sci in index %}
+    {% set href = get_url(path="@/species/" ~ index[sci].slug ~ ".md") %}
+    {% if not name %}{% set name = index[sci].title %}{% endif %}
+{% endif %}
+{% if not name %}{% set name = sci %}{% endif %}
+{% set photo = "" %}{% set photo_src = "" %}
+{% if fragment.extra and fragment.extra.image %}
+    {% set photo = fragment.extra.image %}{% set photo_src = "fragment" %}
+{% elif w and w.thumbnail %}
+    {% set photo = w.thumbnail %}{% set photo_src = "wiki" %}
+{% endif %}
+{% set link = href %}{% if not link and w %}{% set link = w.url %}{% endif %}
+{% set text_src = "" %}
+{% if fragment.content %}{% set text_src = "fragment" %}
+{% elif w and (size == "full" or (size == "compact" and w.description)) %}{% set text_src = "wiki" %}{% endif %}
+<article class="species-card species-card--{{ size }}">
+    {% if photo %}
+    <a href="{{ link }}" class="bare species-card__photo">
+        <img src="{{ photo }}" alt="Picture of {{ name }}" loading="lazy" />
+    </a>
+    {% endif %}
+    <div class="species-card__body">
+        <h3 class="species-card__name">{% if link %}<a href="{{ link }}">{{ name }}</a>{% else %}{{ name }}{% endif %}</h3>
+        {% if sci and sci != name %}<div class="species-card__sci"><em>{{ sci }}</em></div>{% endif %}
+        {% if note %}<div class="species-card__note">{{ note }}</div>{% endif %}
+        {% if text_src == "fragment" %}
+            <div class="species-card__text species-card__fragment">{{ fragment.content | safe }}</div>
+        {% elif text_src == "wiki" and size == "full" %}
+            {% if w.description %}<div class="species-card__desc">{{ w.description }}</div>{% endif %}
+            <div class="species-card__text">{{ w.extract_html | safe }}</div>
+        {% elif text_src == "wiki" %}
+            <div class="species-card__text">{{ w.description }}</div>
+        {% endif %}
+        {% if size != "mini" %}
+        <div class="species-card__credit">
+            {% if photo_src == "fragment" %}{{ fragment.extra.image_credit | default(value="") }} {% endif %}
+            {% set wiki_link = "" %}
+            {% if w %}{% set wiki_link = '<a href="' ~ w.url ~ '">Wikipedia</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>)' %}{% endif %}
+            {% if photo_src == "wiki" and text_src == "wiki" %}Photo &amp; text: {{ wiki_link | safe }}
+            {% elif photo_src == "wiki" %}Photo: {{ wiki_link | safe }}
+            {% elif text_src == "wiki" %}Text: {{ wiki_link | safe }}{% endif %}
+        </div>
+        {% endif %}
+    </div>
+</article>
+{% endcomponent species.card %}
+
+
+{#
+  species.fragment_card: the species page for a Fragment, from its folder name
+  (content/fragments/<slug>/...). Renders a card for that Fragment.
+#}
+{% component species.fragment_card(fragment: map, size: string = "compact") %}
+{% set slug = fragment.relative_path | split(pat="/") | nth(n=1) %}
+{% set sp = get_page(path="species/" ~ slug ~ ".md") %}
+{{<species.card sci={sp.extra.scientific_name} fragment={fragment} size={size} title={sp.title} />}}
+{% endcomponent species.fragment_card %}

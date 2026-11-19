@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{#
+  Species page. Identity and Poster Record tags come from the generated page;
+  Wikipedia content from data/wiki.json; Fragments from content/fragments/<slug>/.
+#}
+
+{% block main_content %}
+{% set sci = page.extra.scientific_name %}
+{% set slug = page.slug %}
+<main class="species-page">
+    <article>
+        {{<species.card sci={sci} size="full" title={page.title} />}}
+
+        {% set fragments_section = get_section(path="fragments/_index.md") %}
+        {% set_global has_fragments = false %}
+        {% for f in fragments_section.pages %}{% if (f.relative_path | split(pat="/") | nth(n=1)) == slug %}{% set_global has_fragments = true %}{% endif %}{% endfor %}
+        {% if has_fragments %}
+        <section class="species-fragments">
+            <h2>Notes</h2>
+            <ul class="fragment-list">
+            {% for f in fragments_section.pages %}
+                {% if (f.relative_path | split(pat="/") | nth(n=1)) == slug %}
+                <li class="fragment" id="{{ f.slug }}">
+                    <h3><a href="{{ f.permalink }}">{{ f.title }}</a></h3>
+                    {{ f.content | safe }}
+                    <div class="fragment-tags">
+                        {% for kind in ["senses", "when", "season"] %}
+                            {% if f.taxonomies[kind] %}
+                                {% for term in f.taxonomies[kind] %}
+                                <a class="tag post-tag" href="{{ get_taxonomy_url(kind=kind, term=term) }}">{{ term }}</a>
+                                {% endfor %}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </li>
+                {% endif %}
+            {% endfor %}
+            </ul>
+        </section>
+        {% endif %}
+
+        <section class="species-records">
+            {% if page.taxonomies.years %}
+            <h2>On the Original Posters</h2>
+            <p>
+                {% if page.extra.poster_names %}Listed as <strong>{{ page.extra.poster_names | join(sep=", ") }}</strong>, {% endif %}
+                {% for m in page.taxonomies.months %}<a class="tag post-tag" href="{{ get_taxonomy_url(kind='months', term=m) }}">{{ m }}</a> {% endfor %}
+                {% for y in page.taxonomies.years %}<a class="tag post-tag" href="{{ get_taxonomy_url(kind='years', term=y) }}">{{ y }}</a> {% endfor %}
+            </p>
+            <ul class="poster-pdfs">
+                {% for pdf in page.taxonomies.pdfs %}
+                <li><a href="{{ get_taxonomy_url(kind='pdfs', term=pdf) }}">{{ pdf | replace(from=".txt", to="") }}</a></li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+
+            {% if page.extra.observed_months %}
+            <h2>Recent Observations</h2>
+            <p>Seen near Risinghurst on iNaturalist in:
+                {% for m in page.extra.observed_months | reverse %}
+                <a class="tag post-tag" href="{{ get_url(path='@/observations/' ~ m ~ '.md') }}">{{ (m ~ "-01") | date(format="%B %Y") }}</a>
+                {% endfor %}
+            </p>
+            {% endif %}
+
+            {% if page.taxonomies.kingdom or page.taxonomies.categories %}
+            <p class="species-groups">
+                {% for k in page.taxonomies.kingdom %}<a class="tag post-tag" href="{{ get_taxonomy_url(kind='kingdom', term=k) }}">{{ k }}</a> {% endfor %}
+                {% for c in page.taxonomies.categories %}<a class="tag post-tag" href="{{ get_taxonomy_url(kind='categories', term=c) }}">{{ c }}</a> {% endfor %}
+            </p>
+            {% endif %}
+        </section>
+    </article>
+</main>
+{% endblock main_content %}

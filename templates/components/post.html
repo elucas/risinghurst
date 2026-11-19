@@ -1,10 +1,27 @@
 {% component post.list_post(page: map) %}
 {% set post_url = page.extra?.link_to or page.permalink %}
+{# Species pages and Fragments carry no copy of Wikipedia data: look it up by Scientific Name. #}
+{% set thumb = page.extra?.thumbnail | default(value="") %}
+{% set description = page.description | default(value="") %}
+{% set list_title = page.title %}
+{% set sci = page.extra?.scientific_name | default(value="") %}
+{% if page.relative_path is starting_with(pat="fragments/") %}
+    {% set sp = get_page(path="species/" ~ (page.relative_path | split(pat="/") | nth(n=1)) ~ ".md") %}
+    {% set sci = sp.extra.scientific_name %}
+    {% set list_title = sp.title ~ ": " ~ page.title %}
+{% endif %}
+{% if sci %}
+    {% set wiki_all = load_data(path="data/wiki.json", required=false) or {} %}
+    {% if sci in wiki_all %}
+        {% if not thumb %}{% set thumb = wiki_all[sci].thumbnail %}{% endif %}
+        {% if not description and not page.summary and not page.content %}{% set description = wiki_all[sci].description %}{% endif %}
+    {% endif %}
+{% endif %}
 <li class="list-item">
     <section class="with-thumb">
-        {% if page.extra?.thumbnail %}
+        {% if thumb %}
         <a href="{{ post_url | safe }}" class="bare">
-            <img src="{{ page.extra.thumbnail }}" class="cropped-thumb" title="Picture of {{ page.title }}" />
+            <img src="{{ thumb }}" class="cropped-thumb" title="Picture of {{ list_title }}" loading="lazy" />
         </a>
         {% endif %}
 
@@ -14,7 +31,7 @@
             {% endif %}
             <div>
                 <h1 class="title">
-                    <a href="{{ post_url | safe }}">{{ page.title }}
+                    <a href="{{ post_url | safe }}">{{ list_title }}
                         {% if page.extra?.link_to %}
                             ↗
                         {% endif %}
@@ -26,8 +43,10 @@
                 </h1>
 
                 <div class="description">
-                    {% if page.description %}
-                        {{ page.description }}
+                    {% if description %}
+                        {{ description }}
+                    {% elif page.content and page.relative_path is starting_with(pat="fragments/") %}
+                        {{ page.content | safe }}
                     {% elif page.summary %}
                         {{ page.summary | safe }}&hellip;
                     {% else %}

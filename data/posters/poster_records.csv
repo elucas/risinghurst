@@ -1,0 +1,642 @@
+filename,year,month,name,normalised
+2018_05_may_butterflies.txt,2018,05,Large White,largewhite
+2018_05_may_butterflies.txt,2018,05,Orange Tip,orangetip
+2018_05_may_butterflies.txt,2018,05,Common Blue,commonblue
+2018_05_may_butterflies.txt,2018,05,Speckled Wood,speckledwood
+2018_05_may_butterflies.txt,2018,05,Painted Lady,paintedlady
+2018_05_may_butterflies.txt,2018,05,Small Blue,smallblue
+2018_05_may_butterflies.txt,2018,05,Red Admiral,redadmiral
+2018_05_may_grasses.txt,2018,05,Meadow foxtail (Alopecurus pratensis),meadowfoxtail
+2018_05_may_trees.txt,2018,05,Hawthorn,hawthorn
+2018_05_may_trees.txt,2018,05,Horse Chestnut,horsechestnut
+2018_05_may_trees.txt,2018,05,Cherry Tree,cherrytree
+2018_05_may_trees.txt,2018,05,Rowan Tree,rowantree
+2018_05_may_trees.txt,2018,05,English Oak,englishoak
+2018_05_may_trees.txt,2018,05,Crack Willow,crackwillow
+2018_05_may_wildflowers.txt,2018,05,Garlic Mustard,garlicmustard
+2018_05_may_wildflowers.txt,2018,05,Cow Parsley,cowparsley
+2018_05_may_wildflowers.txt,2018,05,Lesser Stitchwort,lesserstitchwort
+2018_05_may_wildflowers.txt,2018,05,Daisy,daisy
+2018_05_may_wildflowers.txt,2018,05,White Dead Nettle,whitedeadnettle
+2018_05_may_wildflowers.txt,2018,05,Dandelion,dandelion
+2018_05_may_wildflowers.txt,2018,05,Buttercup,buttercup
+2018_05_may_wildflowers.txt,2018,05,Wood Avens,woodavens
+2018_05_may_wildflowers.txt,2018,05,Herb-Robert,herbrobert
+2018_05_may_wildflowers.txt,2018,05,Cuckoo Flower,cuckooflower
+2018_05_may_wildflowers.txt,2018,05,Field Forget-me-not,fieldforgetmenot
+2018_05_may_wildflowers.txt,2018,05,Ground Ivy,groundivy
+2018_05_may_wildflowers.txt,2018,05,Slender Speedwell,slenderspeedwell
+2018_05_may_wildflowers.txt,2018,05,Cuckoo Pint,cuckoopint
+2018_05_may_wildflowers.txt,2018,05,Red Clover,redclover
+2018_05_may_wildflowers.txt,2018,05,Tufted Vetch,tuftedvetch
+2018_06_june_butterflies.txt,2018,06,Brimstone,brimstone
+2018_06_june_butterflies.txt,2018,06,Ringlet,ringlet
+2018_06_june_butterflies.txt,2018,06,Gatekeeper,gatekeeper
+2018_06_june_butterflies.txt,2018,06,Meadow Brown,meadowbrown
+2018_06_june_grasses.txt,2018,06,Cock's Foot,cocksfoot
+2018_06_june_grasses.txt,2018,06,Rye Grass,ryegrass
+2018_06_june_grasses.txt,2018,06,Meadow grass,meadowgrass
+2018_06_june_grasses.txt,2018,06,Yorkshire Fog,yorkshirefog
+2018_06_june_meadow-wild-flowers.txt,2018,06,Buttercup,buttercup
+2018_06_june_meadow-wild-flowers.txt,2018,06,Dock,dock
+2018_06_june_meadow-wild-flowers.txt,2018,06,Tufted Vetch,tuftedvetch
+2018_06_june_meadow-wild-flowers.txt,2018,06,Yellow rattle,yellowrattle
+2018_06_june_meadow-wild-flowers.txt,2018,06,Black medic,blackmedic
+2018_06_june_meadow-wild-flowers.txt,2018,06,Red Clover,redclover
+2018_06_june_meadow-wild-flowers.txt,2018,06,Buttercup,buttercup
+2018_06_june_meadow-wild-flowers.txt,2018,06,Dandelion,dandelion
+2018_06_june_meadow-wild-flowers.txt,2018,06,Tufted Vetch,tuftedvetch
+2018_06_june_meadow-wild-flowers.txt,2018,06,Cuckoo Flower,cuckooflower
+2018_06_june_meadow-wild-flowers.txt,2018,06,Red Clover,redclover
+2018_06_june_other_things.txt,2018,06,Labyrinth Spider,labyrinthspider
+2018_06_june_other_things.txt,2018,06,Wolfs milk,wolfsmilk
+2018_06_june_trees.txt,2018,06,Elder Tree,eldertree
+2018_06_june_trees.txt,2018,06,Horse Chestnut,horsechestnut
+2018_06_june_trees.txt,2018,06,Ash Tree,ashtree
+2018_06_june_trees.txt,2018,06,Lime tree,limetree
+2018_06_june_trees.txt,2018,06,Sycamore,sycamore
+2018_06_june_wildflowers_4pages.txt,2018,06,Cleavers,cleavers
+2018_06_june_wildflowers_4pages.txt,2018,06,Cow Parsley,cowparsley
+2018_06_june_wildflowers_4pages.txt,2018,06,Daisy,daisy
+2018_06_june_wildflowers_4pages.txt,2018,06,Oxeye Daisy,oxeyedaisy
+2018_06_june_wildflowers_4pages.txt,2018,06,Garlic Mustard,garlicmustard
+2018_06_june_wildflowers_4pages.txt,2018,06,Ribwort Plantain,ribwortplantain
+2018_06_june_wildflowers_4pages.txt,2018,06,Lesser Stitchwort,lesserstitchwort
+2018_06_june_wildflowers_4pages.txt,2018,06,White Dead Nettle,whitedeadnettle
+2018_06_june_wildflowers_4pages.txt,2018,06,Groundsel,groundsel
+2018_06_june_wildflowers_4pages.txt,2018,06,Buttercup,buttercup
+2018_06_june_wildflowers_4pages.txt,2018,06,Wood avens,woodavens
+2018_06_june_wildflowers_4pages.txt,2018,06,Smooth sow-thistle,smoothsowthistle
+2018_06_june_wildflowers_4pages.txt,2018,06,Herb robert,herbrobert
+2018_06_june_wildflowers_4pages.txt,2018,06,Dog Rose,dogrose
+2018_06_june_wildflowers_4pages.txt,2018,06,Slender speedwell,slenderspeedwell
+2018_06_june_wildflowers_4pages.txt,2018,06,Field Forget-me-not,fieldforgetmenot
+2018_06_june_wildflowers_4pages.txt,2018,06,Ground Ivy,groundivy
+2018_06_june_wildflowers_4pages.txt,2018,06,Red Clover,redclover
+2018_06_june_wildflowers_4pages.txt,2018,06,Tufted Vetch,tuftedvetch
+2018_06_june_wildflowers_4pages.txt,2018,06,Common Nettle,commonnettle
+2018_06_june_wildflowers_4pages.txt,2018,06,Dock,dock
+2018_07_july_butterflies.txt,2018,07,Comma Butterfly,commabutterfly
+2018_07_july_butterflies.txt,2018,07,Small Tortoiseshell,smalltortoiseshell
+2018_07_july_butterflies.txt,2018,07,Peacock Butterfly,peacockbutterfly
+2018_07_july_butterflies.txt,2018,07,Garden Tiger Moth,gardentigermoth
+2018_07_july_butterflies.txt,2018,07,Brimstone,brimstone
+2018_07_july_butterflies.txt,2018,07,Ringlet,ringlet
+2018_07_july_butterflies.txt,2018,07,Gatekeeper,gatekeeper
+2018_07_july_butterflies.txt,2018,07,Meadow Brown,meadowbrown
+2018_07_july_butterflies.txt,2018,07,Large White,largewhite
+2018_07_july_butterflies.txt,2018,07,Small White,smallwhite
+2018_07_july_butterflies.txt,2018,07,Speckled Wood,speckledwood
+2018_07_july_butterflies.txt,2018,07,Common Blue,commonblue
+2018_07_july_butterflies.txt,2018,07,Small Blue,smallblue
+2018_07_july_butterflies.txt,2018,07,Orange Tip,orangetip
+2018_07_july_butterflies.txt,2018,07,Painted Lady,paintedlady
+2018_07_july_butterflies.txt,2018,07,Red Admiral,redadmiral
+2018_07_july_grasses.txt,2018,07,Italian Rye-Grass,italianryegrass
+2018_07_july_grasses.txt,2018,07,Perennial Rye-Grass,perennialryegrass
+2018_07_july_grasses.txt,2018,07,Crested Dog's Tail,cresteddogstail
+2018_07_july_grasses.txt,2018,07,Cock's Foot,cocksfoot
+2018_07_july_grasses.txt,2018,07,Yorkshire Fog,yorkshirefog
+2018_07_july_grasses.txt,2018,07,Meadow Foxtail,meadowfoxtail
+2018_07_july_grasses.txt,2018,07,Timothy Grass,timothygrass
+2018_07_july_grasses.txt,2018,07,False Oat-grass,falseoatgrass
+2018_07_july_grasses.txt,2018,07,Common Bent,commonbent
+2018_07_july_grasses.txt,2018,07,Creeping Bent,creepingbent
+2018_07_july_grasses.txt,2018,07,Red Fescue,redfescue
+2018_07_july_grasses.txt,2018,07,Rough Meadow Grass,roughmeadowgrass
+2018_07_july_grasses.txt,2018,07,Annual Meadow Grass,annualmeadowgrass
+2018_07_july_grasses.txt,2018,07,Smooth Meadow Grass,smoothmeadowgrass
+2018_07_july_meadow_wildflowers.txt,2018,07,White Clover,whiteclover
+2018_07_july_meadow_wildflowers.txt,2018,07,Cut-leaved Cranesbill,cutleavedcranesbill
+2018_07_july_meadow_wildflowers.txt,2018,07,Meadow Vetchling,meadowvetchling
+2018_07_july_meadow_wildflowers.txt,2018,07,Bird's-Foot Trefoil,birdsfoottrefoil
+2018_07_july_meadow_wildflowers.txt,2018,07,Common Knapweed,commonknapweed
+2018_07_july_meadow_wildflowers.txt,2018,07,Buttercup,buttercup
+2018_07_july_meadow_wildflowers.txt,2018,07,Dock,dock
+2018_07_july_meadow_wildflowers.txt,2018,07,Yellow Rattle,yellowrattle
+2018_07_july_meadow_wildflowers.txt,2018,07,Red Clover,redclover
+2018_07_july_meadow_wildflowers.txt,2018,07,Lesser Stitchwort,lesserstitchwort
+2018_07_july_meadow_wildflowers.txt,2018,07,Common Spotted Orchid,commonspottedorchid
+2018_07_july_trees_other_things.txt,2018,07,Redcurrant,redcurrant
+2018_07_july_trees_other_things.txt,2018,07,Apple Tree,appletree
+2018_07_july_trees_other_things.txt,2018,07,Beech,beech
+2018_07_july_trees_other_things.txt,2018,07,English Oak,englishoak
+2018_07_july_trees_other_things.txt,2018,07,Turkey Oak,turkeyoak
+2018_07_july_trees_other_things.txt,2018,07,Horse Chestnut,horsechestnut
+2018_07_july_trees_other_things.txt,2018,07,Common Frog,commonfrog
+2018_07_july_trees_other_things.txt,2018,07,Slow worm,slowworm
+2018_07_july_trees_other_things.txt,2018,07,Black and Yellow Long Horn Beetle,blackandyellowlonghornbeetle
+2018_07_july_wildflowers.txt,2018,07,Common Nettle,commonnettle
+2018_07_july_wildflowers.txt,2018,07,Dock,dock
+2018_07_july_wildflowers.txt,2018,07,Groundsel,groundsel
+2018_07_july_wildflowers.txt,2018,07,Smooth Sow-thistle,smoothsowthistle
+2018_07_july_wildflowers.txt,2018,07,Hawkweed,hawkweed
+2018_07_july_wildflowers.txt,2018,07,Creeping Cinquefoil,creepingcinquefoil
+2018_07_july_wildflowers.txt,2018,07,Woundwort/Hedge Nettle,woundworthedgenettle
+2018_07_july_wildflowers.txt,2018,07,Self-heal,selfheal
+2018_07_july_wildflowers.txt,2018,07,Honeysuckle,honeysuckle
+2018_07_july_wildflowers.txt,2018,07,Blackberry,blackberry
+2018_07_july_wildflowers.txt,2018,07,Common Hogweed,commonhogweed
+2018_07_july_wildflowers.txt,2018,07,Wild Angelica,wildangelica
+2018_07_july_wildflowers.txt,2018,07,Cuckoo-pint,cuckoopint
+2018_07_july_wildflowers.txt,2018,07,Great Willowherb,greatwillowherb
+2018_07_july_wildflowers.txt,2018,07,Thistle,thistle
+2018_08_august.txt,2018,08,Comma Butterfly,commabutterfly
+2018_08_august.txt,2018,08,Small Tortoiseshell,smalltortoiseshell
+2018_08_august.txt,2018,08,Peacock Butterfly,peacockbutterfly
+2018_08_august.txt,2018,08,Garden Tiger Moth,gardentigermoth
+2018_08_august.txt,2018,08,Six-spot Burnet,sixspotburnet
+2018_08_august.txt,2018,08,Brimstone,brimstone
+2018_08_august.txt,2018,08,Ringlet,ringlet
+2018_08_august.txt,2018,08,Gatekeeper,gatekeeper
+2018_08_august.txt,2018,08,Meadow Brown,meadowbrown
+2018_08_august.txt,2018,08,Large White,largewhite
+2018_08_august.txt,2018,08,Small White,smallwhite
+2018_08_august.txt,2018,08,Orange Tip,orangetip
+2018_08_august.txt,2018,08,Common Blue,commonblue
+2018_08_august.txt,2018,08,Small Blue,smallblue
+2018_08_august.txt,2018,08,Painted Lady,paintedlady
+2018_08_august.txt,2018,08,Red Admiral,redadmiral
+2018_08_august.txt,2018,08,Rowan Tree,rowantree
+2018_08_august.txt,2018,08,Elder Tree,eldertree
+2018_08_august.txt,2018,08,Walnut tree,walnuttree
+2018_08_august.txt,2018,08,Self-heal,selfheal
+2018_08_august.txt,2018,08,Common Nettle,commonnettle
+2018_08_august.txt,2018,08,Dock,dock
+2018_08_august.txt,2018,08,Blackberry,blackberry
+2018_08_august.txt,2018,08,Cuckoo Pint,cuckoopint
+2018_08_august.txt,2018,08,Thistle,thistle
+2018_08_august.txt,2018,08,Ribwort Plantain,ribwortplantain
+2018_08_august.txt,2018,08,Common Knapweed,commonknapweed
+2018_08_august.txt,2018,08,Buttercup,buttercup
+2018_08_august.txt,2018,08,Great Willowherb,greatwillowherb
+2018_08_august.txt,2018,08,Daisy,daisy
+2018_08_august.txt,2018,08,Dandelion,dandelion
+2018_08_august.txt,2018,08,Fleabane (Pulicana Dysenterica),fleabane
+2018_08_august.txt,2018,08,Greater Plantain,greaterplantain
+2018_08_august.txt,2018,08,Yellow rattle,yellowrattle
+2018_08_august.txt,2018,08,Cut-leaved Cranesbill,cutleavedcranesbill
+2018_08_august.txt,2018,08,Common Knapweed,commonknapweed
+2018_08_august.txt,2018,08,Tufted Vetch,tuftedvetch
+2018_08_august.txt,2018,08,Buttercup,buttercup
+2018_08_august.txt,2018,08,Dandelion,dandelion
+2018_08_august.txt,2018,08,Daisy,daisy
+2018_08_august.txt,2018,08,Dock,dock
+2018_08_august.txt,2018,08,Coal Fungus,coalfungus
+2018_08_august.txt,2018,08,Bracket fungi,bracketfungi
+2018_09_september.txt,2018,09,Daisy,daisy
+2018_09_september.txt,2018,09,Dandelion,dandelion
+2018_09_september.txt,2018,09,Herb Robert,herbrobert
+2018_09_september.txt,2018,09,White Dead Nettle,whitedeadnettle
+2018_09_september.txt,2018,09,Great Willowherb,greatwillowherb
+2018_09_september.txt,2018,09,Yarrow,yarrow
+2018_09_september.txt,2018,09,Common Knapweed,commonknapweed
+2018_09_september.txt,2018,09,Horse Chestnut,horsechestnut
+2018_09_september.txt,2018,09,Sycamore,sycamore
+2018_09_september.txt,2018,09,Crab Apple tree,crabappletree
+2018_09_september.txt,2018,09,English Oak,englishoak
+2018_09_september.txt,2018,09,Beech,beech
+2018_09_september.txt,2018,09,Ash Tree,ashtree
+2018_09_september.txt,2018,09,Elder Tree,eldertree
+2018_09_september.txt,2018,09,Hawthorn,hawthorn
+2018_09_september.txt,2018,09,Lime Tree,limetree
+2018_09_september.txt,2018,09,Turkey Oak,turkeyoak
+2018_09_september.txt,2018,09,Cherry Tree,cherrytree
+2018_09_september.txt,2018,09,Rowan Tree,rowantree
+2018_09_september.txt,2018,09,Inocybe rimosa,inocyberimosa
+2018_09_september.txt,2018,09,Torn fibrecap,tornfibrecap
+2018_10_october.txt,2018,10,Comma Butterfly,commabutterfly
+2018_10_october.txt,2018,10,Small Tortoiseshell,smalltortoiseshell
+2018_10_october.txt,2018,10,Peacock Butterfly,peacockbutterfly
+2018_10_october.txt,2018,10,Brimstone,brimstone
+2018_10_october.txt,2018,10,Six-spot Burnet,sixspotburnet
+2018_10_october.txt,2018,10,Ringlet,ringlet
+2018_10_october.txt,2018,10,Gatekeeper,gatekeeper
+2018_10_october.txt,2018,10,Meadow Brown,meadowbrown
+2018_10_october.txt,2018,10,Large White,largewhite
+2018_10_october.txt,2018,10,Small White,smallwhite
+2018_10_october.txt,2018,10,Orange Tip,orangetip
+2018_10_october.txt,2018,10,Speckled Wood,speckledwood
+2018_10_october.txt,2018,10,Common Blue,commonblue
+2018_10_october.txt,2018,10,Small Blue,smallblue
+2018_10_october.txt,2018,10,Painted Lady,paintedlady
+2018_10_october.txt,2018,10,Red Admiral,redadmiral
+2018_11_november.txt,2018,11,Trooping Funnel,troopingfunnel
+2019_01_january.txt,2019,01,Blackberry,blackberry
+2019_01_january.txt,2019,01,Hazel,hazel
+2019_01_january.txt,2019,01,Catkins,catkins
+2019_01_january.txt,2019,01,Ivy,ivy
+2019_01_january.txt,2019,01,Nettle,nettle
+2019_01_january.txt,2019,01,Hellebore,hellebore
+2019_02_february.txt,2019,02,Long tailed tit,longtailedtit
+2019_02_february.txt,2019,02,Blue tit,bluetit
+2019_02_february.txt,2019,02,Great tit,greattit
+2019_02_february.txt,2019,02,Wren,wren
+2019_02_february.txt,2019,02,Great Spotted Woodpecker,greatspottedwoodpecker
+2019_02_february.txt,2019,02,Sparrow,sparrow
+2019_02_february.txt,2019,02,Dunnock,dunnock
+2019_02_february.txt,2019,02,Chaffinch,chaffinch
+2019_02_february.txt,2019,02,Goldfinch,goldfinch
+2019_02_february.txt,2019,02,Blackbird,blackbird
+2019_02_february.txt,2019,02,Robin,robin
+2019_02_february.txt,2019,02,Song Thrush,songthrush
+2019_02_february.txt,2019,02,Starling,starling
+2019_02_february.txt,2019,02,Canada Goose,canadagoose
+2019_02_february.txt,2019,02,Grey Heron,greyheron
+2019_02_february.txt,2019,02,Red Kite,redkite
+2019_02_february.txt,2019,02,Buzzard,buzzard
+2019_02_february.txt,2019,02,Herring Gull,herringgull
+2019_02_february.txt,2019,02,Magpie,magpie
+2019_02_february.txt,2019,02,Wood Pigeon,woodpigeon
+2019_02_february.txt,2019,02,Crow,crow
+2019_02_february.txt,2019,02,Black-headed Gull,blackheadedgull
+2019_02_february.txt,2019,02,Jackdaw,jackdaw
+2019_02_february.txt,2019,02,Collared Dove,collareddove
+2019_02_february.txt,2019,02,Green Woodpecker,greenwoodpecker
+2019_02_february.txt,2019,02,Peacock Butterfly,peacockbutterfly
+2019_03_march_other_things.txt,2019,03,Pussy Willow,pussywillow
+2019_03_march_other_things.txt,2019,03,horse chestnut,horsechestnut
+2019_03_march_other_things.txt,2019,03,Blackthorn,blackthorn
+2019_03_march_other_things.txt,2019,03,Ground Ivy,groundivy
+2019_03_march_other_things.txt,2019,03,Chickweed,chickweed
+2019_03_march_other_things.txt,2019,03,Peacock Butterfly,peacockbutterfly
+2019_03_march_other_things.txt,2019,03,Cabbage White,cabbagewhite
+2019_03_march_other_things.txt,2019,03,English Oak,englishoak
+2019_03_march_other_things.txt,2019,03,Ash tree,ashtree
+2019_03_march_other_things.txt,2019,03,Great Spotted Woodpecker,greatspottedwoodpecker
+2019_04_april.txt,2019,04,Comma Butterfly,commabutterfly
+2019_04_april.txt,2019,04,Small Tortoiseshell,smalltortoiseshell
+2019_04_april.txt,2019,04,Peacock Butterfly,peacockbutterfly
+2019_04_april.txt,2019,04,Brimstone,brimstone
+2019_04_april.txt,2019,04,Large White,largewhite
+2019_04_april.txt,2019,04,Small White,smallwhite
+2019_04_april.txt,2019,04,Orange Tip,orangetip
+2019_04_april.txt,2019,04,Speckled Wood,speckledwood
+2019_04_april.txt,2019,04,Painted Lady,paintedlady
+2019_04_april.txt,2019,04,Red Admiral,redadmiral
+2019_04_april.txt,2019,04,Daisy,daisy
+2019_04_april.txt,2019,04,Lesser Stitchwort,lesserstitchwort
+2019_04_april.txt,2019,04,White Dead Nettle,whitedeadnettle
+2019_04_april.txt,2019,04,Self-heal,selfheal
+2019_04_april.txt,2019,04,Dandelion,dandelion
+2019_04_april.txt,2019,04,Groundsel,groundsel
+2019_04_april.txt,2019,04,Celandine,celandine
+2019_04_april.txt,2019,04,Violet,violet
+2019_04_april.txt,2019,04,Purple Wood Anemone,purplewoodanemone
+2019_04_april.txt,2019,04,Hawthorn,hawthorn
+2019_04_april.txt,2019,04,Hazel,hazel
+2019_04_april.txt,2019,04,Privet,privet
+2019_04_april.txt,2019,04,Poplar,poplar
+2019_04_april.txt,2019,04,Sycamore,sycamore
+2019_04_april.txt,2019,04,Rowan Tree,rowantree
+2019_04_april.txt,2019,04,Willow,willow
+2019_04_april.txt,2019,04,Magpie,magpie
+2019_05-may-birds.txt,2019,05,Jackdaw (Corvus Monedula),jackdaw
+2019_05-may-butterflies.txt,2019,05,Peacock Butterfly (Inachis io),peacockbutterfly
+2019_05-may-butterflies.txt,2019,05,Brimstone,brimstone
+2019_05-may-butterflies.txt,2019,05,Common Blue,commonblue
+2019_05-may-butterflies.txt,2019,05,Small Blue,smallblue
+2019_05-may-butterflies.txt,2019,05,Large White,largewhite
+2019_05-may-butterflies.txt,2019,05,Orange Tip,orangetip
+2019_05-may-butterflies.txt,2019,05,Painted Lady,paintedlady
+2019_05-may-butterflies.txt,2019,05,Speckled Wood,speckledwood
+2019_05-may-butterflies.txt,2019,05,Red Admiral,redadmiral
+2019_05-may-grasses.txt,2019,05,Meadow foxtail (Alopecurus pratensis),meadowfoxtail
+2019_05-may-meadow-wild-flowers.txt,2019,05,Buttercup,buttercup
+2019_05-may-meadow-wild-flowers.txt,2019,05,Cuckoo Flower,cuckooflower
+2019_05-may-meadow-wild-flowers.txt,2019,05,Tufted Vetch,tuftedvetch
+2019_05-may-meadow-wild-flowers.txt,2019,05,Red Clover,redclover
+2019_05-may-meadow-wild-flowers.txt,2019,05,Dandelion,dandelion
+2019_05-may-trees.txt,2019,05,Hawthorn,hawthorn
+2019_05-may-trees.txt,2019,05,Horse Chestnut,horsechestnut
+2019_05-may-trees.txt,2019,05,Cherry Tree,cherrytree
+2019_05-may-trees.txt,2019,05,Rowan Tree,rowantree
+2019_05-may-trees.txt,2019,05,English Oak,englishoak
+2019_05-may-trees.txt,2019,05,Crack Willow,crackwillow
+2019_05-may-wild-flowers.txt,2019,05,Garlic Mustard,garlicmustard
+2019_05-may-wild-flowers.txt,2019,05,Cow Parsley,cowparsley
+2019_05-may-wild-flowers.txt,2019,05,Daisy,daisy
+2019_05-may-wild-flowers.txt,2019,05,Cleavers,cleavers
+2019_05-may-wild-flowers.txt,2019,05,White Dead-nettle,whitedeadnettle
+2019_05-may-wild-flowers.txt,2019,05,Lesser Stitchwort,lesserstitchwort
+2019_05-may-wild-flowers.txt,2019,05,Greater Stitchwort,greaterstitchwort
+2019_05-may-wild-flowers.txt,2019,05,Buttercup,buttercup
+2019_05-may-wild-flowers.txt,2019,05,Dandelion,dandelion
+2019_05-may-wild-flowers.txt,2019,05,Herb Robert,herbrobert
+2019_05-may-wild-flowers.txt,2019,05,Wood Avens,woodavens
+2019_05-may-wild-flowers.txt,2019,05,Cuckoo Flower,cuckooflower
+2019_05-may-wild-flowers.txt,2019,05,Field Forget-me-not,fieldforgetmenot
+2019_05-may-wild-flowers.txt,2019,05,Self-Heal,selfheal
+2019_05-may-wild-flowers.txt,2019,05,Ground Ivy,groundivy
+2019_05-may-wild-flowers.txt,2019,05,Slender Speedwell,slenderspeedwell
+2019_05-may-wild-flowers.txt,2019,05,Red Clover,redclover
+2019_05-may-wild-flowers.txt,2019,05,Cuckoo Pint,cuckoopint
+2019_05-may-wild-flowers.txt,2019,05,Tufted Vetch,tuftedvetch
+2019_05-may-wild-flowers.txt,2019,05,Bluebell,bluebell
+2019_06-june-butterflies.txt,2019,06,Ringlet,ringlet
+2019_06-june-butterflies.txt,2019,06,Gatekeeper,gatekeeper
+2019_06-june-butterflies.txt,2019,06,Meadow Brown,meadowbrown
+2019_06-june-grasses.txt,2019,06,Cocks Foot,cocksfoot
+2019_06-june-grasses.txt,2019,06,Meadow grass,meadowgrass
+2019_06-june-grasses.txt,2019,06,Rye grass,ryegrass
+2019_06-june-grasses.txt,2019,06,Yorkshire fog,yorkshirefog
+2019_06-june-meadow-wild-flowers.txt,2019,06,Buttercup,buttercup
+2019_06-june-meadow-wild-flowers.txt,2019,06,Dock,dock
+2019_06-june-meadow-wild-flowers.txt,2019,06,Cut-leaved Cranesbill,cutleavedcranesbill
+2019_06-june-meadow-wild-flowers.txt,2019,06,Black medic,blackmedic
+2019_06-june-meadow-wild-flowers.txt,2019,06,Common Knapweed,commonknapweed
+2019_06-june-meadow-wild-flowers.txt,2019,06,Tufted Vetch,tuftedvetch
+2019_06-june-meadow-wild-flowers.txt,2019,06,Yellow Rattle,yellowrattle
+2019_06-june-meadow-wild-flowers.txt,2019,06,Lesser Stitchwort,lesserstitchwort
+2019_06-june-meadow-wild-flowers.txt,2019,06,Red Clover,redclover
+2019_06-june-meadow-wild-flowers.txt,2019,06,White Clover,whiteclover
+2019_06-june-other-things.txt,2019,06,Cardinal Beetle,cardinalbeetle
+2019_06-june-trees.txt,2019,06,Elder Tree,eldertree
+2019_06-june-trees.txt,2019,06,Horse Chestnut,horsechestnut
+2019_06-june-trees.txt,2019,06,Ash Tree,ashtree
+2019_06-june-trees.txt,2019,06,Lime tree,limetree
+2019_06-june-wild-flowers.txt,2019,06,Cleavers,cleavers
+2019_06-june-wild-flowers.txt,2019,06,Cow Parsley,cowparsley
+2019_06-june-wild-flowers.txt,2019,06,Daisy,daisy
+2019_06-june-wild-flowers.txt,2019,06,Oxeye Daisy,oxeyedaisy
+2019_06-june-wild-flowers.txt,2019,06,Garlic Mustard,garlicmustard
+2019_06-june-wild-flowers.txt,2019,06,Ribwort Plantain,ribwortplantain
+2019_06-june-wild-flowers.txt,2019,06,Lesser Stitchwort,lesserstitchwort
+2019_06-june-wild-flowers.txt,2019,06,White Dead-nettle,whitedeadnettle
+2019_06-june-wild-flowers.txt,2019,06,Groundsel,groundsel
+2019_06-june-wild-flowers.txt,2019,06,Buttercup,buttercup
+2019_06-june-wild-flowers.txt,2019,06,Wood Avens,woodavens
+2019_06-june-wild-flowers.txt,2019,06,Smooth Sow-thistle,smoothsowthistle
+2019_06-june-wild-flowers.txt,2019,06,Creeping Cinquefoil,creepingcinquefoil
+2019_06-june-wild-flowers.txt,2019,06,Dandelion,dandelion
+2019_06-june-wild-flowers.txt,2019,06,Dog Rose,dogrose
+2019_06-june-wild-flowers.txt,2019,06,Herb Robert,herbrobert
+2019_06-june-wild-flowers.txt,2019,06,Wild Clary,wildclary
+2019_06-june-wild-flowers.txt,2019,06,Slender Speedwell,slenderspeedwell
+2019_06-june-wild-flowers.txt,2019,06,Field Forget-me-not,fieldforgetmenot
+2019_06-june-wild-flowers.txt,2019,06,Ground Ivy,groundivy
+2019_06-june-wild-flowers.txt,2019,06,Red Clover,redclover
+2019_06-june-wild-flowers.txt,2019,06,Tufted Vetch,tuftedvetch
+2019_06-june-wild-flowers.txt,2019,06,Cut-leaved Cranesbill,cutleavedcranesbill
+2019_06-june-wild-flowers.txt,2019,06,Common Nettle,commonnettle
+2019_06-june-wild-flowers.txt,2019,06,Dock,dock
+2019_07-july-birds.txt,2019,07,Collared Dove,collareddove
+2019_07-july-butterflies.txt,2019,07,Ringlet,ringlet
+2019_07-july-butterflies.txt,2019,07,Gatekeeper,gatekeeper
+2019_07-july-butterflies.txt,2019,07,Meadow Brown,meadowbrown
+2019_07-july-butterflies.txt,2019,07,Speckled Wood,speckledwood
+2019_07-july-butterflies.txt,2019,07,Comma Butterfly,commabutterfly
+2019_07-july-butterflies.txt,2019,07,Small Tortoiseshell,smalltortoiseshell
+2019_07-july-butterflies.txt,2019,07,Peacock butterfly,peacockbutterfly
+2019_07-july-butterflies.txt,2019,07,Large White,largewhite
+2019_07-july-butterflies.txt,2019,07,Small White,smallwhite
+2019_07-july-butterflies.txt,2019,07,Orange tip,orangetip
+2019_07-july-butterflies.txt,2019,07,Common Blue,commonblue
+2019_07-july-butterflies.txt,2019,07,Small Blue,smallblue
+2019_07-july-butterflies.txt,2019,07,Brimstone,brimstone
+2019_07-july-butterflies.txt,2019,07,Painted Lady,paintedlady
+2019_07-july-butterflies.txt,2019,07,Red Admiral,redadmiral
+2019_07-july-grasses.txt,2019,07,Italian Rye-grass,italianryegrass
+2019_07-july-grasses.txt,2019,07,Perennial Rye-grass,perennialryegrass
+2019_07-july-grasses.txt,2019,07,Crested Dog's-tail,cresteddogstail
+2019_07-july-grasses.txt,2019,07,Cocks Foot,cocksfoot
+2019_07-july-grasses.txt,2019,07,Yorkshire Fog,yorkshirefog
+2019_07-july-grasses.txt,2019,07,Meadow Foxtail,meadowfoxtail
+2019_07-july-grasses.txt,2019,07,Timothy Grass,timothygrass
+2019_07-july-grasses.txt,2019,07,False Oat-grass,falseoatgrass
+2019_07-july-grasses.txt,2019,07,Common Bent,commonbent
+2019_07-july-grasses.txt,2019,07,Creeping Bent,creepingbent
+2019_07-july-grasses.txt,2019,07,Red Fescue,redfescue
+2019_07-july-grasses.txt,2019,07,Rough Meadow-grass,roughmeadowgrass
+2019_07-july-grasses.txt,2019,07,Annual Meadow-grass,annualmeadowgrass
+2019_07-july-grasses.txt,2019,07,Smooth Meadow-grass,smoothmeadowgrass
+2019_07-july-meadow-wild-flowers.txt,2019,07,Buttercup,buttercup
+2019_07-july-meadow-wild-flowers.txt,2019,07,Dock,dock
+2019_07-july-meadow-wild-flowers.txt,2019,07,Cut-leaved Cranesbill,cutleavedcranesbill
+2019_07-july-meadow-wild-flowers.txt,2019,07,Black Medic,blackmedic
+2019_07-july-meadow-wild-flowers.txt,2019,07,Common Knapweed,commonknapweed
+2019_07-july-meadow-wild-flowers.txt,2019,07,Tufted Vetch,tuftedvetch
+2019_07-july-meadow-wild-flowers.txt,2019,07,Yellow Rattle,yellowrattle
+2019_07-july-meadow-wild-flowers.txt,2019,07,Lesser Stitchwort,lesserstitchwort
+2019_07-july-meadow-wild-flowers.txt,2019,07,Red Clover,redclover
+2019_07-july-meadow-wild-flowers.txt,2019,07,White Clover,whiteclover
+2019_07-july-meadow-wild-flowers.txt,2019,07,Meadow Vetchling,meadowvetchling
+2019_07-july-meadow-wild-flowers.txt,2019,07,Birds-foot Trefoil,birdsfoottrefoil
+2019_07-july-meadow-wild-flowers.txt,2019,07,Slender Tare,slendertare
+2019_07-july-trees.txt,2019,07,Horse Chestnut,horsechestnut
+2019_07-july-wild-flowers.txt,2019,07,Self-heal,selfheal
+2019_07-july-wild-flowers.txt,2019,07,Dock,dock
+2019_07-july-wild-flowers.txt,2019,07,White Dead Nettle,whitedeadnettle
+2019_07-july-wild-flowers.txt,2019,07,Hedge Woundwort,hedgewoundwort
+2019_07-july-wild-flowers.txt,2019,07,Thistle,thistle
+2019_07-july-wild-flowers.txt,2019,07,Great Willowherb,greatwillowherb
+2019_07-july-wild-flowers.txt,2019,07,Groundsel,groundsel
+2019_07-july-wild-flowers.txt,2019,07,Sow thistle,sowthistle
+2019_07-july-wild-flowers.txt,2019,07,Hawkweed,hawkweed
+2019_07-july-wild-flowers.txt,2019,07,Blackberry,blackberry
+2019_07-july-wild-flowers.txt,2019,07,Creeping Cinquefoil,creepingcinquefoil
+2019_07-july-wild-flowers.txt,2019,07,Honeysuckle,honeysuckle
+2019_07-july-wild-flowers.txt,2019,07,Cuckoo Pint,cuckoopint
+2019_08-august-butterflies.txt,2019,08,Painted Lady,paintedlady
+2019_08-august-butterflies.txt,2019,08,Small Blue,smallblue
+2019_08-august-butterflies.txt,2019,08,Small Tortoiseshell,smalltortoiseshell
+2019_08-august-butterflies.txt,2019,08,Peacock butterfly,peacockbutterfly
+2019_08-august-butterflies.txt,2019,08,Small Blue,smallblue
+2019_08-august-butterflies.txt,2019,08,Brimstone,brimstone
+2019_08-august-butterflies.txt,2019,08,Large White,largewhite
+2019_08-august-butterflies.txt,2019,08,Small White,smallwhite
+2019_08-august-butterflies.txt,2019,08,Red Admiral,redadmiral
+2019_08-august-butterflies.txt,2019,08,Gatekeeper,gatekeeper
+2019_08-august-butterflies.txt,2019,08,Meadow Brown,meadowbrown
+2019_08-august-butterflies.txt,2019,08,Speckled Wood,speckledwood
+2019_08-august-other.txt,2019,08,Crab apple tree,crabappletree
+2019_08-august-other.txt,2019,08,Daedaleopsis confragosa,daedaleopsisconfragosa
+2019_08-august-wild-flowers.txt,2019,08,Matricaria Discoidea,matricariadiscoidea
+2019_08-august-wild-flowers.txt,2019,08,Common Nettle,commonnettle
+2019_08-august-wild-flowers.txt,2019,08,Dock,dock
+2019_08-august-wild-flowers.txt,2019,08,Cuckoo Pint,cuckoopint
+2019_08-august-wild-flowers.txt,2019,08,Thistle,thistle
+2019_08-august-wild-flowers.txt,2019,08,Creeping Cinquefoil,creepingcinquefoil
+2019_08-august-wild-flowers.txt,2019,08,Buttercup,buttercup
+2019_08-august-wild-flowers.txt,2019,08,Daisy,daisy
+2019_08-august-wild-flowers.txt,2019,08,White Dead-nettle,whitedeadnettle
+2019_08-august-wild-flowers.txt,2019,08,Dandelion,dandelion
+2019_08-august-wild-flowers.txt,2019,08,White Clover,whiteclover
+2019_08-august-wild-flowers.txt,2019,08,Herb Robert,herbrobert
+2019_08-august-wild-flowers.txt,2019,08,Fleabane,fleabane
+2019_08-august-wild-flowers.txt,2019,08,Greater Plantain,greaterplantain
+2019_08-august-wild-flowers.txt,2019,08,Great willowherb,greatwillowherb
+2019_09-autumn-birds.txt,2019,09,Red Kite,redkite
+2019_09-autumn-other.txt,2019,09,Field mushroom,fieldmushroom
+2019_09-autumn-other.txt,2019,09,Bay Polypore,baypolypore
+2019_09_autumn-trees.txt,2019,09,Lime tree,limetree
+2019_09_autumn-trees.txt,2019,09,Rowan Tree,rowantree
+2019_09_autumn-trees.txt,2019,09,English Oak,englishoak
+2019_09_autumn-trees.txt,2019,09,Willow,willow
+2019_09_autumn-trees.txt,2019,09,Poplar,poplar
+2019_09_autumn-trees.txt,2019,09,Ash Tree,ashtree
+2019_09_autumn-trees.txt,2019,09,Beech,beech
+2019_09_autumn-trees.txt,2019,09,Cherry tree,cherrytree
+2019_09_autumn-trees.txt,2019,09,Hawthorn,hawthorn
+2019_09_autumn-trees.txt,2019,09,Horse Chestnut,horsechestnut
+2019_09_autumn-trees.txt,2019,09,Crab apple tree,crabappletree
+2020_03_march.txt,2020,03,Ground Ivy,groundivy
+2020_03_march.txt,2020,03,Chickweed,chickweed
+2020_03_march.txt,2020,03,Peacock butterfly,peacockbutterfly
+2020_03_march.txt,2020,03,Cabbage White,cabbagewhite
+2020_03_march.txt,2020,03,White dead nettle,whitedeadnettle
+2020_03_march.txt,2020,03,Self-heal,selfheal
+2020_03_march.txt,2020,03,Daisy,daisy
+2020_03_march.txt,2020,03,Groundsel,groundsel
+2020_03_march.txt,2020,03,Hellebore,hellebore
+2020_03_march.txt,2020,03,Snowdrop,snowdrop
+2020_03_march.txt,2020,03,Celandine,celandine
+2020_03_march_birds.txt,2020,03,Blackbird,blackbird
+2020_03_march_birds.txt,2020,03,Song Thrush,songthrush
+2020_03_march_birds.txt,2020,03,Robin,robin
+2020_03_march_birds.txt,2020,03,Wren,wren
+2020_03_march_birds.txt,2020,03,Dunnock,dunnock
+2020_03_march_birds.txt,2020,03,Great Tit,greattit
+2020_03_march_birds.txt,2020,03,Blue Tit,bluetit
+2020_03_march_birds.txt,2020,03,Chaffinch,chaffinch
+2020_03_march_birds.txt,2020,03,Greenfinch,greenfinch
+2020_03_march_birds.txt,2020,03,Goldfinch,goldfinch
+2020_03_march_birds.txt,2020,03,Starling,starling
+2020_03_march_birds.txt,2020,03,Great Spotted Woodpecker,greatspottedwoodpecker
+2020_03_march_birds.txt,2020,03,Green Woodpecker,greenwoodpecker
+2020_03_march_birds.txt,2020,03,Wood Pigeon,woodpigeon
+2020_03_march_birds.txt,2020,03,Collared Dove,collareddove
+2020_04_april-butterflies.txt,2020,04,Comma Butterfly,commabutterfly
+2020_04_april-butterflies.txt,2020,04,Small Tortoiseshell,smalltortoiseshell
+2020_04_april-butterflies.txt,2020,04,Peacock butterfly,peacockbutterfly
+2020_04_april-butterflies.txt,2020,04,Brimstone,brimstone
+2020_04_april-butterflies.txt,2020,04,Large White,largewhite
+2020_04_april-butterflies.txt,2020,04,Small White,smallwhite
+2020_04_april-butterflies.txt,2020,04,Orange Tip,orangetip
+2020_04_april-butterflies.txt,2020,04,Speckled Wood,speckledwood
+2020_04_april-butterflies.txt,2020,04,Painted Lady,paintedlady
+2020_04_april-butterflies.txt,2020,04,Red Admiral,redadmiral
+2020_04_april-trees.txt,2020,04,Hawthorn,hawthorn
+2020_04_april-trees.txt,2020,04,Hazel,hazel
+2020_04_april-trees.txt,2020,04,Privet,privet
+2020_04_april-trees.txt,2020,04,Poplar,poplar
+2020_04_april-trees.txt,2020,04,Sycamore,sycamore
+2020_04_april-trees.txt,2020,04,Rowan Tree,rowantree
+2020_04_april-trees.txt,2020,04,Willow,willow
+2020_04_april-trees.txt,2020,04,Blackthorn,blackthorn
+2020_04_april-trees.txt,2020,04,Beech,beech
+2020_04_april-trees.txt,2020,04,English Oak,englishoak
+2020_04_april-trees.txt,2020,04,Cherry tree,cherrytree
+2020_04_april-trees.txt,2020,04,crab apple tree,crabappletree
+2020_04_april-trees.txt,2020,04,Horse Chestnut,horsechestnut
+2020_04_april-wild-flowers.txt,2020,04,Daisy,daisy
+2020_04_april-wild-flowers.txt,2020,04,Lesser Stitchwort,lesserstitchwort
+2020_04_april-wild-flowers.txt,2020,04,White Dead Nettle,whitedeadnettle
+2020_04_april-wild-flowers.txt,2020,04,Self-heal,selfheal
+2020_04_april-wild-flowers.txt,2020,04,Dandelion,dandelion
+2020_04_april-wild-flowers.txt,2020,04,Groundsel,groundsel
+2020_04_april-wild-flowers.txt,2020,04,Buttercup,buttercup
+2020_04_april-wild-flowers.txt,2020,04,Celandine,celandine
+2020_04_april-wild-flowers.txt,2020,04,Violet,violet
+2020_04_april-wild-flowers.txt,2020,04,Purple Wood Anemone,purplewoodanemone
+2020_04_april-wild-flowers.txt,2020,04,Bluebell,bluebell
+2020_04_april-wild-flowers.txt,2020,04,Spanish Bluebell,spanishbluebell
+2020_05_may-butterflies.txt,2020,05,Brimstone,brimstone
+2020_05_may-butterflies.txt,2020,05,Peacock Butterfly,peacockbutterfly
+2020_05_may-butterflies.txt,2020,05,Orange Tip,orangetip
+2020_05_may-butterflies.txt,2020,05,Large White,largewhite
+2020_05_may-butterflies.txt,2020,05,Small White,smallwhite
+2020_05_may-butterflies.txt,2020,05,Common Blue,commonblue
+2020_05_may-butterflies.txt,2020,05,Holly Blue,hollyblue
+2020_05_may-butterflies.txt,2020,05,Speckled Wood,speckledwood
+2020_05_may-butterflies.txt,2020,05,Painted Lady,paintedlady
+2020_05_may-butterflies.txt,2020,05,Red Admiral,redadmiral
+2020_05_may-meadow-wild-flowers.txt,2020,05,Buttercup,buttercup
+2020_05_may-meadow-wild-flowers.txt,2020,05,Cuckoo Flower,cuckooflower
+2020_05_may-meadow-wild-flowers.txt,2020,05,Dandelion,dandelion
+2020_05_may-meadow-wild-flowers.txt,2020,05,Red Clover,redclover
+2020_05_may-meadow-wild-flowers.txt,2020,05,Tufted Vetch,tuftedvetch
+2020_05_may-meadow-wild-flowers.txt,2020,05,Yellow Rattle,yellowrattle
+2020_05_may-meadow-wild-flowers.txt,2020,05,Speedwell,speedwell
+2020_05_may-other.txt,2020,05,Dryads Saddle,dryadssaddle
+2020_06_june-butterflies.txt,2020,06,Ringlet,ringlet
+2020_06_june-butterflies.txt,2020,06,Gatekeeper,gatekeeper
+2020_06_june-butterflies.txt,2020,06,Meadow Brown,meadowbrown
+2020_06_june-butterflies.txt,2020,06,Large White,largewhite
+2020_06_june-butterflies.txt,2020,06,Orange Tip,orangetip
+2020_06_june-butterflies.txt,2020,06,Speckled Wood,speckledwood
+2020_06_june-butterflies.txt,2020,06,Common Blue,commonblue
+2020_06_june-butterflies.txt,2020,06,Small Blue,smallblue
+2020_06_june-butterflies.txt,2020,06,Brimstone,brimstone
+2020_06_june-butterflies.txt,2020,06,Painted Lady,paintedlady
+2020_06_june-butterflies.txt,2020,06,Peacock butterfly,peacockbutterfly
+2020_06_june-butterflies.txt,2020,06,Red Admiral,redadmiral
+2020_06_june-other.txt,2020,06,Roe deer,roedeer
+2020_06_june-other.txt,2020,06,Fox,fox
+2020_06_june-other.txt,2020,06,Badger,badger
+2020_06_june-wild-flowers.txt,2020,06,Cleavers,cleavers
+2020_06_june-wild-flowers.txt,2020,06,Cow Parsley,cowparsley
+2020_06_june-wild-flowers.txt,2020,06,Daisy,daisy
+2020_06_june-wild-flowers.txt,2020,06,Oxeye Daisy,oxeyedaisy
+2020_06_june-wild-flowers.txt,2020,06,Garlic Mustard,garlicmustard
+2020_06_june-wild-flowers.txt,2020,06,Ribwort Plantain,ribwortplantain
+2020_06_june-wild-flowers.txt,2020,06,Lesser Stitchwort,lesserstitchwort
+2020_06_june-wild-flowers.txt,2020,06,White Dead-nettle,whitedeadnettle
+2020_06_june-wild-flowers.txt,2020,06,Groundsel,groundsel
+2020_06_june-wild-flowers.txt,2020,06,Smooth sow-thistle,smoothsowthistle
+2020_06_june-wild-flowers.txt,2020,06,Buttercup,buttercup
+2020_06_june-wild-flowers.txt,2020,06,Wood Avens,woodavens
+2020_06_june-wild-flowers.txt,2020,06,Creeping Cinquefoil,creepingcinquefoil
+2020_06_june-wild-flowers.txt,2020,06,Dandelion,dandelion
+2020_06_june-wild-flowers.txt,2020,06,Dog rose,dogrose
+2020_06_june-wild-flowers.txt,2020,06,Herb Robert,herbrobert
+2020_06_june-wild-flowers.txt,2020,06,Hedge Woundwort,hedgewoundwort
+2020_06_june-wild-flowers.txt,2020,06,Common Spotted Orchid,commonspottedorchid
+2020_07_july-butterflies.txt,2020,07,Ringlet,ringlet
+2020_07_july-butterflies.txt,2020,07,Gatekeeper,gatekeeper
+2020_07_july-butterflies.txt,2020,07,Meadow Brown,meadowbrown
+2020_07_july-butterflies.txt,2020,07,Speckled Wood,speckledwood
+2020_07_july-butterflies.txt,2020,07,Comma Butterfly,commabutterfly
+2020_07_july-butterflies.txt,2020,07,Small Tortoiseshell,smalltortoiseshell
+2020_07_july-butterflies.txt,2020,07,Peacock Butterfly,peacockbutterfly
+2020_07_july-butterflies.txt,2020,07,Large White,largewhite
+2020_07_july-butterflies.txt,2020,07,Small White,smallwhite
+2020_07_july-butterflies.txt,2020,07,Orange Tip,orangetip
+2020_07_july-butterflies.txt,2020,07,Common Blue,commonblue
+2020_07_july-butterflies.txt,2020,07,Small Blue,smallblue
+2020_07_july-butterflies.txt,2020,07,Brimstone,brimstone
+2020_07_july-butterflies.txt,2020,07,Painted Lady,paintedlady
+2020_07_july-butterflies.txt,2020,07,Red Admiral,redadmiral
+2020_07_july-meadow-wild-flowers.txt,2020,07,Buttercup,buttercup
+2020_07_july-meadow-wild-flowers.txt,2020,07,Dock,dock
+2020_07_july-meadow-wild-flowers.txt,2020,07,Cut-leaved Cranesbill,cutleavedcranesbill
+2020_07_july-meadow-wild-flowers.txt,2020,07,Black medic,blackmedic
+2020_07_july-meadow-wild-flowers.txt,2020,07,Common Knapweed,commonknapweed
+2020_07_july-meadow-wild-flowers.txt,2020,07,Tufted Vetch,tuftedvetch
+2020_07_july-meadow-wild-flowers.txt,2020,07,Yellow Rattle,yellowrattle
+2020_07_july-meadow-wild-flowers.txt,2020,07,Lesser Stitchwort,lesserstitchwort
+2020_07_july-meadow-wild-flowers.txt,2020,07,Red Clover,redclover
+2020_07_july-meadow-wild-flowers.txt,2020,07,White Clover,whiteclover
+2020_07_july-meadow-wild-flowers.txt,2020,07,Meadow Vetchling,meadowvetchling
+2020_07_july-meadow-wild-flowers.txt,2020,07,Bird s-foot Trefoil,birdsfoottrefoil
+2020_07_july-meadow-wild-flowers.txt,2020,07,Slender Tare,slendertare
+2020_07_july-wild-flowers.txt,2020,07,Self-heal,selfheal
+2020_07_july-wild-flowers.txt,2020,07,Dock,dock
+2020_07_july-wild-flowers.txt,2020,07,White Dead Nettle,whitedeadnettle
+2020_07_july-wild-flowers.txt,2020,07,Hedge Woundwort,hedgewoundwort
+2020_07_july-wild-flowers.txt,2020,07,Groundsel,groundsel
+2020_07_july-wild-flowers.txt,2020,07,Hawkweed,hawkweed
+2020_07_july-wild-flowers.txt,2020,07,Sow-thistle,sowthistle
+2020_07_july-wild-flowers.txt,2020,07,Lesser Yellow Trefoil,lesseryellowtrefoil
+2020_07_july-wild-flowers.txt,2020,07,Creeping Cinquefoil,creepingcinquefoil
+2020_07_july-wild-flowers.txt,2020,07,Thistle,thistle
+2020_07_july-wild-flowers.txt,2020,07,Great Willowherb,greatwillowherb
+2020_07_july-wild-flowers.txt,2020,07,Cuckoo Pint,cuckoopint
+2020_07_july-wild-flowers.txt,2020,07,Blackberry,blackberry
+2020_07_july-wild-flowers.txt,2020,07,Bindweed,bindweed
+2020_07_july-wild-flowers.txt,2020,07,Privet,privet
+2020_07_july-wild-flowers.txt,2020,07,Buttercup,buttercup
+2020_07_july-wild-flowers.txt,2020,07,Daisy,daisy
+2020_07_july-wild-flowers.txt,2020,07,White Clover,whiteclover
+2020_07_july-wild-flowers.txt,2020,07,Dandelion,dandelion
+2020_07_july-wild-flowers.txt,2020,07,Greater Plantain,greaterplantain

@@ -1,0 +1,102 @@
+/* New Poster: one portrait A4 sheet (210 × 297 mm). Loaded by templates/poster_page.html. */
+
+:root {
+    --poster-margin: 10mm;
+}
+
+.poster-sheet {
+    box-sizing: border-box;
+    width: 210mm;
+    height: 297mm;
+    padding: var(--poster-margin);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 4mm;
+    background: #fff;
+    color: #111;
+    font-family: "Space Grotesk", "Helvetica", "Arial", sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.3;
+    margin: 0 auto 2rem;
+    box-shadow: 0 0 0 1px #ccc, 0 4px 18px rgba(0, 0, 0, 0.15);
+}
+
+.poster-sheet a { color: inherit; border-bottom: none; }
+
+.poster-header h1 { font-size: 26pt; margin: 0; line-height: 1.1; }
+.poster-header h1::before { content: ""; }
+.poster-subtitle { font-size: 12pt; color: #555; }
+.poster-intro p { margin: 0 0 2mm; }
+
+.poster-block h2 {
+    font-size: 14pt;
+    margin: 0 0 2mm;
+    padding-bottom: 1mm;
+    border-bottom: 0.5mm solid #2f6b3a;
+}
+.poster-block h2::before { content: ""; }
+
+.poster-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3mm 5mm;
+}
+.poster-cards--mini { grid-template-columns: repeat(3, 1fr); }
+.poster-cards--full { grid-template-columns: 1fr; }
+
+.poster-more { margin: 1mm 0 0; font-size: 9pt; color: #555; }
+
+.poster-footer {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 4mm;
+    font-size: 8pt;
+    color: #555;
+    border-top: 0.3mm solid #ccc;
+    padding-top: 1.5mm;
+}
+
+/* ~22mm square is comfortably scannable from arm's length; the SVG scales to fit. */
+.poster-qr { flex: 0 0 22mm; width: 22mm; height: 22mm; }
+.poster-qr svg { display: block; width: 100%; height: 100%; }
+.poster-qr:empty { display: none; }            /* no JS: just show the URL text */
+.poster-footer__link { flex: 1; font-size: 9pt; color: #111; }
+.poster-footer__credits { text-align: right; }
+
+.data-missing { color: #a33; font-style: italic; }
+
+/* Species cards inside a poster */
+.poster-sheet .species-card { display: flex; gap: 3mm; align-items: flex-start; break-inside: avoid; }
+.poster-sheet .species-card__photo img {
+    width: 22mm; height: 22mm; object-fit: cover; border-radius: 1mm; max-width: none;
+}
+.poster-sheet .species-card--compact .species-card__photo img { width: 28mm; height: 28mm; }
+.poster-sheet .species-card--full .species-card__photo img { width: 40mm; height: 40mm; }
+.poster-sheet .species-card__name { font-size: 11pt; margin: 0; }
+.poster-sheet .species-card__name::before { content: ""; }
+.poster-sheet .species-card__sci { font-size: 8.5pt; color: #555; }
+.poster-sheet .species-card__note { font-size: 8.5pt; color: #2f6b3a; }
+.poster-sheet .species-card__text { font-size: 9.5pt; }
+.poster-sheet .species-card__text p { margin: 1mm 0 0; }
+.poster-sheet .species-card__credit { display: none; } /* credited once in the footer */
+
+/* Screen-only toolbar + overflow warning */
+.poster-toolbar { display: flex; gap: 1rem; align-items: center; justify-content: center; margin: 1rem 0; }
+.poster-overflow-warning { display: none; color: #a33; font-weight: bold; }
+body.poster-overflowing .poster-overflow-warning { display: inline; }
+body.poster-overflowing .poster-sheet { box-shadow: 0 0 0 3px #c33; }
+
+@media print {
+    @page { size: A4 portrait; margin: 0; }
+    html, body { margin: 0 !important; padding: 0 !important; background: #fff !important; }
+    nav, #top, header.site-header, footer:not(.poster-footer), .no-print, .poster-toolbar { display: none !important; }
+    body * { visibility: hidden; }
+    .poster-sheet, .poster-sheet * { visibility: visible; }
+    .poster-sheet {
+        position: absolute; left: 0; top: 0;
+        margin: 0; box-shadow: none !important;
+        -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    }
+}

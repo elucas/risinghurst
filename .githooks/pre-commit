@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+# Rebuild the site into docs/ (GitHub Pages) and stage it, so docs/ always matches the commit.
+#
+# Enable once per clone:   git config core.hooksPath .githooks
+# Skip for one commit:     SKIP_ZOLA=1 git commit ...
+set -euo pipefail
+cd "$(git rev-parse --show-toplevel)"
+
+[[ "${SKIP_ZOLA:-}" == "1" ]] && { echo "pre-commit: SKIP_ZOLA=1, not rebuilding docs/"; exit 0; }
+
+# Fetched data isn't in git (adr/0003). Building without it would publish a site
+# with no photos, descriptions or sightings, so refuse rather than degrade the live site.
+if [[ ! -s data/wiki.json ]] || ! compgen -G "data/observations/*.json" > /dev/null; then
+    echo "pre-commit: data/wiki.json or data/observations/*.json is missing."
+    echo "  Fetch it first (see README: 'Fresh checkout'), or commit with SKIP_ZOLA=1."
+    exit 1
+fi
+
+if command -v zola > /dev/null; then
+    zola_cmd=(zola)
+elif command -v flatpak > /dev/null && flatpak info org.getzola.zola > /dev/null 2>&1; then
+    zola_cmd=(flatpak run --filesystem="$PWD" org.getzola.zola)
+else
+    echo "pre-commit: zola not found (install it, or commit with SKIP_ZOLA=1)"
+    exit 1
+fi
+
+# zola builds from the working tree, so unstaged edits end up in docs/ too.
+if ! git diff --quiet -- content templates static data zola.toml themes; then
+    echo "pre-commit: warning: unstaged site changes will be included in docs/:"
+    git diff --name-only -- content templates static data zola.toml themes | sed 's/^/    /'
+fi
+
+if ! build_log=$("${zola_cmd[@]}" build 2>&1); then
+    echo "$build_log"
+    echo "pre-commit: zola build failed; commit aborted."
+    exit 1
+fi
+
+git add -A docs
+echo "pre-commit: docs/ rebuilt and staged."

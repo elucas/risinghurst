@@ -1,0 +1,7 @@
+inaturalist/*.csv
+
+# Fetched third-party data: fetch your own copy (adr/0003-fetched-data-not-committed.md)
+data/wiki.csv
+data/wiki.json
+data/observations/
+.venv/

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{# A Fragment's own page: needed so it appears in senses/when/season taxonomy listings. #}
+
+{% block main_content %}
+{% set slug = page.relative_path | split(pat="/") | nth(n=1) %}
+{% set sp = get_page(path="species/" ~ slug ~ ".md") %}
+<main class="fragment-page">
+    <article>
+        <header><h1 class="title">{{ sp.title }}: {{ page.title }}</h1></header>
+        {{<species.fragment_card fragment={page} size="compact" />}}
+        <div class="fragment-tags">
+            {% for kind in ["senses", "when", "season"] %}
+                {% if page.taxonomies[kind] %}
+                    {% for term in page.taxonomies[kind] %}
+                    <a class="tag post-tag" href="{{ get_taxonomy_url(kind=kind, term=term) }}">{{ term }}</a>
+                    {% endfor %}
+                {% endif %}
+            {% endfor %}
+        </div>
+        <p><a class="readmore" href="{{ sp.permalink }}#{{ page.slug }}">More about {{ sp.title }} ⟶</a></p>
+    </article>
+</main>
+{% endblock main_content %}

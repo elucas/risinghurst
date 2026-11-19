@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{#
+  New Poster: one portrait A4 page. The page body is the intro; everything else comes
+  from the ordered [[extra.blocks]] list (see templates/components/poster.html).
+  On screen the sheet is drawn at A4 size and flagged if its content overflows.
+#}
+
+{% block main_content %}
+<link rel="stylesheet" href="{{ get_url(path='poster.css', cachebust=true) }}" />
+{% set poster_date = page.date | date(format="%Y-%m-%d") %}
+<div class="poster-toolbar no-print">
+    <span>A4 preview</span>
+    <button type="button" onclick="window.print()">Print</button>
+    <span class="poster-overflow-warning">⚠ Content overflows the page: reduce a block's <code>limit</code> or shorten the intro.</span>
+</div>
+<div class="poster-sheet">
+    <header class="poster-header">
+        <h1>Wildlife: {{ page.title }}</h1>
+        {% if page.description %}<div class="poster-subtitle">{{ page.description }}</div>{% endif %}
+    </header>
+
+    <section class="poster-intro">
+        {{ page.content | safe }}
+    </section>
+
+    {% for block in page.extra.blocks | default(value=[]) %}
+        {% if block.type == "recent_sightings" %}
+            {{<poster.recent_sightings block={block} poster_date={poster_date} />}}
+        {% elif block.type == "senses" %}
+            {{<poster.senses block={block} poster_date={poster_date} />}}
+        {% elif block.type == "archive" %}
+            {{<poster.archive block={block} poster_date={poster_date} />}}
+        {% else %}
+            <p class="data-missing">Unknown block type "{{ block.type }}".</p>
+        {% endif %}
+    {% endfor %}
+
+    <footer class="poster-footer">
+        {# QR code + URL are drawn in the browser from the page's own address (static/js/poster-qr.js) #}
+        <div class="poster-qr" data-poster-qr></div>
+        <div class="poster-footer__link">
+            <strong>Scan for more about this month's wildlife</strong><br />
+            <span data-poster-url>{{ page.permalink | replace(from="https://", to="") }}</span>
+        </div>
+        <div class="poster-footer__credits">Photos &amp; descriptions: Wikipedia (CC BY-SA 4.0)<br />Sightings: iNaturalist observers</div>
+    </footer>
+</div>
+<script src="{{ get_url(path='js/qrcode-generator-2.0.4.js') }}"></script>
+<script src="{{ get_url(path='js/poster-qr.js', cachebust=true) }}"></script>
+<script>
+(function () {
+    function check() {
+        var sheet = document.querySelector(".poster-sheet");
+        if (!sheet) return;
+        var over = sheet.scrollHeight > sheet.clientHeight + 1;
+        document.body.classList.toggle("poster-overflowing", over);
+    }
+    window.addEventListener("load", check);
+    window.addEventListener("resize", check);
+})();
+</script>
+{% endblock main_content %}

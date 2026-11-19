@@ -118,3 +118,40 @@ ul.observed-species {
         margin-bottom: 2rem;
     }
 }
+
+/* Species cards (templates/components/species.html) */
+.species-card {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+
+    .species-card__photo img {
+        width: 150px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+    .species-card__name { margin: 0; }
+    .species-card__sci, .species-card__credit { color: var(--text-2); font-size: 0.9em; }
+    .species-card__note { color: var(--primary-color); font-size: 0.9em; }
+    .species-card__desc { font-style: italic; }
+}
+.species-card--full .species-card__photo img { width: 300px; }
+.species-card--mini .species-card__photo img { width: 80px; }
+
+.species-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 0 1.5rem;
+}
+
+ul.fragment-list {
+    list-style: none;
+    padding: 0;
+}
+
+@media (max-width: 700px) {
+    .species-card { flex-direction: column; }
+}

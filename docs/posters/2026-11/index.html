@@ -1,0 +1,796 @@
+
+<!DOCTYPE html>
+<html lang="en" class="dark light">
+
+    
+<head>
+    
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="base" content="https://elucas.github.io/risinghurst/" />
+
+    
+
+    
+
+    
+    
+    
+        <title>
+            
+                November 2026
+            
+        </title>
+
+        
+            <meta property="og:title"
+                  content="November 2026" />
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+    
+
+    
+    
+        <link href=https://elucas.github.io/risinghurst/fonts.css rel="stylesheet" />
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+
+    
+    
+
+
+    
+
+    
+    
+
+    
+    
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://elucas.github.io/risinghurst/theme/light.css" />
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://elucas.github.io/risinghurst/theme/dark.css"
+              media="(prefers-color-scheme: dark)" />
+    
+
+    
+        
+        <script src=https://elucas.github.io/risinghurst/js/themetoggle.js></script>
+
+        
+            <script>
+                if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    setTheme("dark");
+                } else {
+                    setTheme("light");
+                }
+            </script>
+        
+    
+
+
+    <link rel="stylesheet"
+          type="text/css"
+          media="screen"
+          href="https://elucas.github.io/risinghurst/main.css" />
+
+    
+        
+            <link rel="stylesheet" href="https://elucas.github.io/risinghurst/risinghurst.css" />
+        
+            <link rel="stylesheet" href="https://elucas.github.io/risinghurst/sortable-theme-minimal.css" />
+        
+    
+
+    <style type="text/css">
+    @media print {
+        nav#top {
+            display: none;
+        }
+
+        .page-header {
+            font-size: 2.5em;
+            line-height: 100%;
+            font-family: "ZedDisplayFtl" "Space Grotesk", "Helvetica", sans-serif;
+        }
+    }
+    </style>
+
+    
+        <script defer
+                src="https://elucas.github.io/risinghurst/js/searchElasticlunr.min.js?h=3626c0ef99daa745b31e"></script><script src="https://elucas.github.io/risinghurst/js/sortable.min.js?h=802b5d03570b2b612141"></script>
+    
+
+</head>
+
+
+    <body>
+        
+
+        <div class="left-content">
+            
+            
+        </div>
+
+        <div class="content">
+            <nav id="top">
+    <div class="left-nav">
+        
+            <a href=https://elucas.github.io/risinghurst/></a>
+        
+
+
+        <div class="socials">
+            
+                
+            
+            
+        </div>
+    </div>
+
+    <div class="right-nav">
+
+        
+            <a href=https://elucas.github.io/risinghurst class="tag">Home</a>
+        
+            <a href=https://elucas.github.io/risinghurst/posters class="tag">(New) Posters</a>
+        
+            <a href=https://elucas.github.io/risinghurst/species class="tag">Species</a>
+        
+            <a href=https://elucas.github.io/risinghurst/observations class="tag">Observations</a>
+        
+            <a href=https://elucas.github.io/risinghurst/tags class="tag">Tags</a>
+        
+            <a href=https://elucas.github.io/risinghurst/about class="tag">About</a>
+        
+
+        
+            <button id="search-button"
+                    class="search-button"
+                    title="$SHORTCUT to open search">
+                <img src="https://elucas.github.io/risinghurst/icons/search.svg"
+                     alt="Search"
+                     class="search-icon" />
+            </button>
+
+            <div id="searchModal"
+                 class="search-modal js"
+                 role="dialog"
+                 aria-labelledby="modalTitle">
+                <div id="modal-content">
+                    <h1 id="modalTitle" class="page-header">
+                        Search
+                    </h1>
+                    <div id="searchBar">
+                        <input id="searchInput"
+                               role="combobox"
+                               autocomplete="off"
+                               spellcheck="false"
+                               aria-expanded="false"
+                               aria-controls="results-container"
+                               placeholder="Search..." />
+                        <button id="clear-search" class="clear-button" title="Clear search">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="results-container">
+                        <div id="results-info">
+                            <span id="zero_results" style="display: none;">No results</span>
+                            <span id="one_result" style="display: none;">1 result</span>
+                            <span id="many_results" style="display: none;">$NUMBER results</span>
+                        </div>
+                        <div id="results" role="listbox">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+        
+        
+    </div>
+</nav>
+
+
+            
+            
+<link rel="stylesheet" href="https://elucas.github.io/risinghurst/poster.css?h=bf9348d839828e55d347" />
+
+<div class="poster-toolbar no-print">
+    <span>A4 preview</span>
+    <button type="button" onclick="window.print()">Print</button>
+    <span class="poster-overflow-warning">⚠ Content overflows the page: reduce a block's <code>limit</code> or shorten the intro.</span>
+</div>
+<div class="poster-sheet">
+    <header class="poster-header">
+        <h1>Wildlife: November 2026</h1>
+        
+    </header>
+
+    <section class="poster-intro">
+        <p>Autumn is nearly over. Winter begins offically on December 1st and most species are now dormant ...but there are still a few fruits and even flowers for the keen-eyed to spot? Here's what some others have seen recently.</p>
+
+    </section>
+
+    
+        
+            
+
+
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+<section class="poster-block poster-block--sightings">
+    <h2>Recently sightings</h2>
+    
+    <div class="poster-cards poster-cards--compact">
+    
+    
+        
+            
+            
+            
+            
+                
+                
+                
+                
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+
+<article class="species-card species-card--compact">
+    
+    <a href="https://elucas.github.io/risinghurst/species/greattit/" class="bare species-card__photo">
+        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Great_tit_%28Parus_major%29%2C_Parc_du_Rouge-Cloitre%2C_For%C3%AAt_de_Soignes%2C_Brussels_%2826194636951%29.jpg/330px-Great_tit_%28Parus_major%29%2C_Parc_du_Rouge-Cloitre%2C_For%C3%AAt_de_Soignes%2C_Brussels_%2826194636951%29.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail" alt="Picture of Great tit" loading="lazy" />
+    </a>
+    
+    <div class="species-card__body">
+        <h3 class="species-card__name"><a href="https://elucas.github.io/risinghurst/species/greattit/">Great tit</a></h3>
+        <div class="species-card__sci"><em>Parus major</em></div>
+        <div class="species-card__note">1 Oct</div>
+        
+            <div class="species-card__text">Passerine bird in the tit family Paridae</div>
+        
+        
+        <div class="species-card__credit">
+            
+            
+            
+            Photo &amp; text: <a href="https://en.wikipedia.org/wiki/Great_tit">Wikipedia</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>)
+            
+        </div>
+        
+    </div>
+</article>
+
+            
+        
+            
+            
+            
+            
+                
+                
+                
+                
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+
+<article class="species-card species-card--compact">
+    
+    <a href="https://elucas.github.io/risinghurst/species/greywagtail/" class="bare species-card__photo">
+        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Gebirgsstelze_im_Geo-Naturpark_Bergstra%C3%9Fe-Odenwald.jpg/330px-Gebirgsstelze_im_Geo-Naturpark_Bergstra%C3%9Fe-Odenwald.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail" alt="Picture of Grey Wagtail" loading="lazy" />
+    </a>
+    
+    <div class="species-card__body">
+        <h3 class="species-card__name"><a href="https://elucas.github.io/risinghurst/species/greywagtail/">Grey Wagtail</a></h3>
+        <div class="species-card__sci"><em>Motacilla cinerea</em></div>
+        <div class="species-card__note">1 Oct</div>
+        
+            <div class="species-card__text">Species of bird</div>
+        
+        
+        <div class="species-card__credit">
+            
+            
+            
+            Photo &amp; text: <a href="https://en.wikipedia.org/wiki/Grey_wagtail">Wikipedia</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>)
+            
+        </div>
+        
+    </div>
+</article>
+
+            
+        
+            
+            
+            
+            
+                
+                
+                
+                
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+
+<article class="species-card species-card--compact">
+    
+    <a href="https://elucas.github.io/risinghurst/species/lesserstagbeetle/" class="bare species-card__photo">
+        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Dorcus_parallelipipedus%2C_male%2C_Ukraine%2C_2017.jpg/330px-Dorcus_parallelipipedus%2C_male%2C_Ukraine%2C_2017.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail" alt="Picture of Lesser Stag Beetle" loading="lazy" />
+    </a>
+    
+    <div class="species-card__body">
+        <h3 class="species-card__name"><a href="https://elucas.github.io/risinghurst/species/lesserstagbeetle/">Lesser Stag Beetle</a></h3>
+        <div class="species-card__sci"><em>Dorcus parallelipipedus</em></div>
+        <div class="species-card__note">8 Oct · seen 2 times</div>
+        
+            <div class="species-card__text">Species of beetle</div>
+        
+        
+        <div class="species-card__credit">
+            
+            
+            
+            Photo &amp; text: <a href="https://en.wikipedia.org/wiki/Dorcus_parallelipipedus">Wikipedia</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>)
+            
+        </div>
+        
+    </div>
+</article>
+
+            
+        
+            
+            
+            
+            
+                
+                
+                
+                
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+
+<article class="species-card species-card--compact">
+    
+    <a href="https://elucas.github.io/risinghurst/species/platycheirusscutatus/" class="bare species-card__photo">
+        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Syrphidae_-_Platycheirus_cf._scutatus.JPG/330px-Syrphidae_-_Platycheirus_cf._scutatus.JPG?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail" alt="Picture of Platycheirus scutatus" loading="lazy" />
+    </a>
+    
+    <div class="species-card__body">
+        <h3 class="species-card__name"><a href="https://elucas.github.io/risinghurst/species/platycheirusscutatus/">Platycheirus scutatus</a></h3>
+        
+        <div class="species-card__note">8 Oct</div>
+        
+            <div class="species-card__text">Species of fly</div>
+        
+        
+        <div class="species-card__credit">
+            
+            
+            
+            Photo &amp; text: <a href="https://en.wikipedia.org/wiki/Platycheirus_scutatus">Wikipedia</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>)
+            
+        </div>
+        
+    </div>
+</article>
+
+            
+        
+    
+        
+            
+            
+            
+            
+        
+            
+            
+            
+            
+        
+            
+            
+            
+            
+        
+            
+            
+            
+            
+        
+    
+    </div>
+    
+    
+</section>
+
+        
+    
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+<section class="poster-block poster-block--senses">
+    <h2>Things you might hear at night in November</h2>
+    <div class="poster-cards poster-cards--compact">
+    
+    
+    
+    
+        
+            
+            
+            
+            
+            
+            
+            
+        
+            
+            
+            
+            
+            
+            
+            
+        
+    
+        
+            
+            
+            
+            
+            
+            
+            
+                
+                
+                
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+
+
+<article class="species-card species-card--compact">
+    
+    <a href="https://elucas.github.io/risinghurst/species/fox/" class="bare species-card__photo">
+        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Portrait_of_a_red_fox_in_Rautas_fj%C3%A4llurskog_%28cropped%29.jpg/330px-Portrait_of_a_red_fox_in_Rautas_fj%C3%A4llurskog_%28cropped%29.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail" alt="Picture of Fox" loading="lazy" />
+    </a>
+    
+    <div class="species-card__body">
+        <h3 class="species-card__name"><a href="https://elucas.github.io/risinghurst/species/fox/">Fox</a></h3>
+        <div class="species-card__sci"><em>Vulpes vulpes</em></div>
+        
+        
+            <div class="species-card__text species-card__fragment"><p>Winter is the breeding season, when foxes are at their most vocal. Listen for screams and barks after dark.</p>
+</div>
+        
+        
+        <div class="species-card__credit">
+            
+            
+            
+            Photo: <a href="https://en.wikipedia.org/wiki/Red_fox">Wikipedia</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>)
+            
+        </div>
+        
+    </div>
+</article>
+
+
+            
+        
+            
+            
+            
+            
+            
+            
+            
+                
+                
+                
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+
+
+<article class="species-card species-card--compact">
+    
+    <a href="https://elucas.github.io/risinghurst/species/reevessmuntjac/" class="bare species-card__photo">
+        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Chinesischer_Muntjak_Muntiacus_reevesi_Zoo_Augsburg-04.jpg/330px-Chinesischer_Muntjak_Muntiacus_reevesi_Zoo_Augsburg-04.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail" alt="Picture of Reeves&#39;s Muntjac" loading="lazy" />
+    </a>
+    
+    <div class="species-card__body">
+        <h3 class="species-card__name"><a href="https://elucas.github.io/risinghurst/species/reevessmuntjac/">Reeves&#39;s Muntjac</a></h3>
+        <div class="species-card__sci"><em>Muntiacus reevesi</em></div>
+        
+        
+            <div class="species-card__text species-card__fragment"><p>Sometimes known as the 'barking deer'. They're the smallest species in the UK, but you wouldn't know that from the amount of noise they make.</p>
+<p>Is it breeding season for Muntjac? No - they breed all year round. This might be part of why they're now classed as an Invasive Species. They bark to establish territory and warn of predators.</p>
+</div>
+        
+        
+        <div class="species-card__credit">
+            
+            
+            
+            Photo: <a href="https://en.wikipedia.org/wiki/Reeves's_muntjac">Wikipedia</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>)
+            
+        </div>
+        
+    </div>
+</article>
+
+
+            
+        
+    
+    
+    
+    </div>
+</section>
+
+        
+    
+        
+            
+
+
+
+
+
+
+
+<section class="poster-block poster-block--archive">
+    <h2>On Peter and Barbara&#39;s November posters</h2>
+    <div class="poster-cards poster-cards--compact">
+    
+    
+    
+        
+            
+            
+            
+            
+        
+    
+        
+            
+            
+            
+            
+                
+                
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+
+<article class="species-card species-card--compact">
+    
+    <a href="https://elucas.github.io/risinghurst/species/troopingfunnel/" class="bare species-card__photo">
+        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Clitocybe_geotropa_JPG1.jpg/330px-Clitocybe_geotropa_JPG1.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail" alt="Picture of Trooping Funnel" loading="lazy" />
+    </a>
+    
+    <div class="species-card__body">
+        <h3 class="species-card__name"><a href="https://elucas.github.io/risinghurst/species/troopingfunnel/">Trooping Funnel</a></h3>
+        <div class="species-card__sci"><em>Infundibulicybe geotropa</em></div>
+        <div class="species-card__note">2018</div>
+        
+            <div class="species-card__text">Species of fungus</div>
+        
+        
+        <div class="species-card__credit">
+            
+            
+            
+            Photo &amp; text: <a href="https://en.wikipedia.org/wiki/Infundibulicybe_geotropa">Wikipedia</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>)
+            
+        </div>
+        
+    </div>
+</article>
+
+            
+        
+    
+        
+            
+            
+            
+            
+        
+    
+    
+    </div>
+</section>
+
+        
+    
+
+    <footer class="poster-footer">
+        
+        <div class="poster-qr" data-poster-qr></div>
+        <div class="poster-footer__link">
+            <strong>Scan for more about this month's wildlife</strong><br />
+            <span data-poster-url>elucas.github.io/risinghurst/posters/2026-11/</span>
+        </div>
+        <div class="poster-footer__credits">Photos &amp; descriptions: Wikipedia (CC BY-SA 4.0)<br />Sightings: iNaturalist observers</div>
+    </footer>
+</div>
+<script src="https://elucas.github.io/risinghurst/js/qrcode-generator-2.0.4.js"></script>
+<script src="https://elucas.github.io/risinghurst/js/poster-qr.js?h=05c417bb0278cb30b20e"></script>
+<script>
+(function () {
+    function check() {
+        var sheet = document.querySelector(".poster-sheet");
+        if (!sheet) return;
+        var over = sheet.scrollHeight > sheet.clientHeight + 1;
+        document.body.classList.toggle("poster-overflowing", over);
+    }
+    window.addEventListener("load", check);
+    window.addEventListener("resize", check);
+})();
+</script>
+
+
+            
+                
+            
+
+            
+        </div>
+
+        <div class="right-content">
+            
+            
+        </div>
+        
+
+    </body>
+
+</html>

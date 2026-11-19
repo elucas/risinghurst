@@ -1,0 +1,167 @@
+name,normalised,kingdom,categories
+Annual Meadow Grass,annualmeadowgrass,Plant,Grass
+Apple Tree,appletree,Plant,Tree
+Ash Tree,ashtree,Plant,Tree
+Badger,badger,Animal,Mammal|Vertebrate
+Bay Polypore,baypolypore,Fungi,
+Beech,beech,Plant,Tree
+Bindweed,bindweed,Plant,Flower
+Bird's-Foot Trefoil,birdsfoottrefoil,Plant,Flower
+Black and Yellow Long Horn Beetle,blackandyellowlonghornbeetle,Animal,Insect|Invertebrate
+Blackberry,blackberry,Plant,Flower
+Blackbird,blackbird,Animal,Bird|Vertebrate
+Black-headed Gull,blackheadedgull,Animal,Bird|Vertebrate
+Black medic,blackmedic,Plant,Flower
+Blackthorn,blackthorn,Plant,Tree
+Bluebell,bluebell,Plant,Flower
+Blue tit,bluetit,Animal,Bird|Vertebrate
+Bracket fungi,bracketfungi,Fungi,
+Brimstone,brimstone,Animal,Butterfly|Invertebrate
+Buttercup,buttercup,Plant,Flower
+Buzzard,buzzard,Animal,Bird|Vertebrate
+Cabbage White,cabbagewhite,Animal,Butterfly|Invertebrate
+Canada Goose,canadagoose,Animal,Bird|Vertebrate
+Cardinal Beetle,cardinalbeetle,Animal,Insect|Invertebrate
+Catkins,catkins,Plant,Flower
+Celandine,celandine,Plant,Flower
+Chaffinch,chaffinch,Animal,Bird|Vertebrate
+Cherry Tree,cherrytree,Plant,Tree
+Chickweed,chickweed,Plant,Flower
+Cleavers,cleavers,Plant,Flower
+Coal Fungus,coalfungus,Fungi,
+Cock's Foot,cocksfoot,Plant,Grass
+Collared Dove,collareddove,Animal,Bird|Vertebrate
+Comma Butterfly,commabutterfly,Animal,Butterfly|Invertebrate
+Common Bent,commonbent,Plant,Grass
+Common Blue,commonblue,Animal,Butterfly|Invertebrate
+Common Frog,commonfrog,Animal,Amphibian|Vertebrate
+Common Hogweed,commonhogweed,Plant,Flower
+Common Knapweed,commonknapweed,Plant,Flower
+Common Nettle,commonnettle,Plant,Flower
+Common Spotted Orchid,commonspottedorchid,Plant,Flower
+Cow Parsley,cowparsley,Plant,Flower
+Crab Apple tree,crabappletree,Plant,Tree
+Crack Willow,crackwillow,Plant,Tree
+Creeping Bent,creepingbent,Plant,Grass
+Creeping Cinquefoil,creepingcinquefoil,Plant,Flower
+Crested Dog's Tail,cresteddogstail,Plant,Grass
+Crow,crow,Animal,Bird|Vertebrate
+Cuckoo Flower,cuckooflower,Plant,Flower
+Cuckoo Pint,cuckoopint,Plant,Flower
+Cut-leaved Cranesbill,cutleavedcranesbill,Plant,Flower
+Daedaleopsis confragosa,daedaleopsisconfragosa,Fungi,
+Daisy,daisy,Plant,Flower
+Dandelion,dandelion,Plant,Flower
+Dock,dock,Plant,Flower
+Dog Rose,dogrose,Plant,Flower
+Dryads Saddle,dryadssaddle,Fungi,
+Dunnock,dunnock,Animal,Bird|Vertebrate
+Elder Tree,eldertree,Plant,Tree
+English Oak,englishoak,Plant,Tree
+False Oat-grass,falseoatgrass,Plant,Grass
+Field Forget-me-not,fieldforgetmenot,Plant,Flower
+Field mushroom,fieldmushroom,Fungi,
+Fleabane (Pulicana Dysenterica),fleabane,Plant,Flower
+Fox,fox,Animal,Mammal|Vertebrate
+Garden Tiger Moth,gardentigermoth,Animal,Moth|Invertebrate
+Garlic Mustard,garlicmustard,Plant,Flower
+Gatekeeper,gatekeeper,Animal,Butterfly|Invertebrate
+Goldfinch,goldfinch,Animal,Bird|Vertebrate
+Greater Plantain,greaterplantain,Plant,Flower
+Greater Stitchwort,greaterstitchwort,Plant,Flower
+Great Spotted Woodpecker,greatspottedwoodpecker,Animal,Bird|Vertebrate
+Great tit,greattit,Animal,Bird|Vertebrate
+Great Willowherb,greatwillowherb,Plant,Flower
+Greenfinch,greenfinch,Animal,Bird|Vertebrate
+Green Woodpecker,greenwoodpecker,Animal,Bird|Vertebrate
+Grey Heron,greyheron,Animal,Bird|Vertebrate
+Ground Ivy,groundivy,Plant,Flower
+Groundsel,groundsel,Plant,Flower
+Hawkweed,hawkweed,Plant,Flower
+Hawthorn,hawthorn,Plant,Tree
+Hazel,hazel,Plant,Tree
+Hedge Woundwort,hedgewoundwort,Plant,Flower
+Hellebore,hellebore,Plant,Flower
+Herb-Robert,herbrobert,Plant,Flower
+Herring Gull,herringgull,Animal,Bird|Vertebrate
+Holly Blue,hollyblue,Animal,Butterfly|Invertebrate
+Honeysuckle,honeysuckle,Plant,Flower
+Horse Chestnut,horsechestnut,Plant,Tree
+Inocybe rimosa,inocyberimosa,Fungi,
+Italian Rye-Grass,italianryegrass,Plant,Grass
+Ivy,ivy,Plant,Flower
+Jackdaw,jackdaw,Animal,Bird|Vertebrate
+Labyrinth Spider,labyrinthspider,Animal,Arachnid|Invertebrate
+Large White,largewhite,Animal,Butterfly|Invertebrate
+Lesser Stitchwort,lesserstitchwort,Plant,Flower
+Lesser Yellow Trefoil,lesseryellowtrefoil,Plant,Flower
+Lime tree,limetree,Plant,Tree
+Long tailed tit,longtailedtit,Animal,Bird|Vertebrate
+Magpie,magpie,Animal,Bird|Vertebrate
+Matricaria Discoidea,matricariadiscoidea,Plant,Flower
+Meadow Brown,meadowbrown,Animal,Butterfly|Invertebrate
+Meadow foxtail (Alopecurus pratensis),meadowfoxtail,Plant,Grass
+Meadow grass,meadowgrass,Plant,Grass
+Meadow Vetchling,meadowvetchling,Plant,Flower
+Nettle,nettle,Plant,Flower
+Orange Tip,orangetip,Animal,Butterfly|Invertebrate
+Oxeye Daisy,oxeyedaisy,Plant,Flower
+Painted Lady,paintedlady,Animal,Butterfly|Invertebrate
+Peacock Butterfly,peacockbutterfly,Animal,Butterfly|Invertebrate
+Perennial Rye-Grass,perennialryegrass,Plant,Grass
+Poplar,poplar,Plant,Tree
+Privet,privet,Plant,Tree
+Purple Wood Anemone,purplewoodanemone,Plant,Flower
+Pussy Willow,pussywillow,Plant,Tree
+Red Admiral,redadmiral,Animal,Butterfly|Invertebrate
+Red Clover,redclover,Plant,Flower
+Redcurrant,redcurrant,Plant,Flower
+Red Fescue,redfescue,Plant,Grass
+Red Kite,redkite,Animal,Bird|Vertebrate
+Ribwort Plantain,ribwortplantain,Plant,Flower
+Ringlet,ringlet,Animal,Butterfly|Invertebrate
+Robin,robin,Animal,Bird|Vertebrate
+Roe deer,roedeer,Animal,Mammal|Vertebrate
+Rough Meadow Grass,roughmeadowgrass,Plant,Grass
+Rowan Tree,rowantree,Plant,Tree
+Rye Grass,ryegrass,Plant,Grass
+Self-heal,selfheal,Plant,Flower
+Six-spot Burnet,sixspotburnet,Animal,Moth|Invertebrate
+Slender Speedwell,slenderspeedwell,Plant,Flower
+Slender Tare,slendertare,Plant,Flower
+Slow worm,slowworm,Animal,Reptile|Vertebrate
+Small Blue,smallblue,Animal,Butterfly|Invertebrate
+Small Tortoiseshell,smalltortoiseshell,Animal,Butterfly|Invertebrate
+Small White,smallwhite,Animal,Butterfly|Invertebrate
+Smooth Meadow Grass,smoothmeadowgrass,Plant,Grass
+Smooth sow-thistle,smoothsowthistle,Plant,Flower
+Snowdrop,snowdrop,Plant,Flower
+Song Thrush,songthrush,Animal,Bird|Vertebrate
+Sow thistle,sowthistle,Plant,Flower
+Spanish Bluebell,spanishbluebell,Plant,Flower
+Sparrow,sparrow,Animal,Bird|Vertebrate
+Speckled Wood,speckledwood,Animal,Butterfly|Invertebrate
+Speedwell,speedwell,Plant,Flower
+Starling,starling,Animal,Bird|Vertebrate
+Sycamore,sycamore,Plant,Tree
+Thistle,thistle,Plant,Flower
+Timothy Grass,timothygrass,Plant,Grass
+Torn fibrecap,tornfibrecap,Fungi,
+Trooping Funnel,troopingfunnel,Fungi,
+Tufted Vetch,tuftedvetch,Plant,Flower
+Turkey Oak,turkeyoak,Plant,Tree
+Violet,violet,Plant,Flower
+Walnut tree,walnuttree,Plant,Tree
+White Clover,whiteclover,Plant,Flower
+White Dead Nettle,whitedeadnettle,Plant,Flower
+Wild Angelica,wildangelica,Plant,Flower
+Wild Clary,wildclary,Plant,Flower
+Willow,willow,Plant,Tree
+Wolfs milk,wolfsmilk,Fungi,
+Wood Avens,woodavens,Plant,Flower
+Wood Pigeon,woodpigeon,Animal,Bird|Vertebrate
+Woundwort/Hedge Nettle,woundworthedgenettle,Plant,Flower
+Wren,wren,Animal,Bird|Vertebrate
+Yarrow,yarrow,Plant,Flower
+Yellow rattle,yellowrattle,Plant,Flower
+Yorkshire Fog,yorkshirefog,Plant,Grass

@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{#
+  One month of iNaturalist Observations, rendered from data/observations/<month>.json
+  (scripts/fetch_observations.py). Repeat sightings of a Species are grouped into one row.
+#}
+
+{% block main_content %}
+{% set data = load_data(path="data/observations/" ~ page.extra.month ~ ".json", required=false) %}
+<main class="observations-month">
+    <article>
+        <header><h1 class="title">{{ page.title }}</h1></header>
+        {{ page.content | safe }}
+
+        {% if not data %}
+        <p class="data-missing">No observation data for {{ page.extra.month }}. Run
+            <code>python scripts/fetch_observations.py --month {{ page.extra.month }}</code>.</p>
+        {% else %}
+        {% set n_obs = data.observations | length %}
+        {% set n_sp = data.species | length %}
+        <p>{{ n_obs }} research-grade observation{% if n_obs != 1 %}s{% endif %} of {{ n_sp }} species
+            recorded around Risinghurst in {{ page.title }}.</p>
+
+        <table class="sortable-theme-minimal" data-sortable>
+            <thead>
+                <tr><th>Common name</th><th>Scientific name</th><th>Group</th><th>Seen</th><th>Observer(s)</th></tr>
+            </thead>
+            <tbody>
+            {% for sp in data.species %}
+                <tr>
+                    <td><a href="#{{ sp.scientific_name | slugify }}">{{ sp.common_name }}</a></td>
+                    <td><em>{{ sp.scientific_name }}</em></td>
+                    <td>{{ sp.iconic_group }}</td>
+                    <td>
+                        {% for o in sp.observations %}<a href="{{ o.uri }}">{{ o.observed_on | date(format="%d %b") }}</a>{% if not loop.last %}, {% endif %}{% endfor %}
+                    </td>
+                    <td>{{ sp.observers | join(sep=", ") }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <h2>Species</h2>
+        <div class="species-grid">
+        {% for sp in data.species %}
+            <div id="{{ sp.scientific_name | slugify }}">
+            {% set note = sp.count ~ " observation" %}{% if sp.count != 1 %}{% set note = note ~ "s" %}{% endif %}
+            {{<species.card sci={sp.scientific_name} size="compact" note={note} />}}
+            </div>
+        {% endfor %}
+        </div>
+
+        <p class="attribution">Observations from <a href="https://www.inaturalist.org">iNaturalist</a>,
+            credited to each observer above. Fetched {{ data.fetched_at | date(format="%d %B %Y") }}.</p>
+        {% endif %}
+    </article>
+</main>
+{% endblock main_content %}

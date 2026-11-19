@@ -12,11 +12,14 @@ default_language = "en"
 theme = "apollo"
 
 taxonomies = [
-    {name = "years", feed = true},
-    {name = "months", feed = true},
+    {name = "years", feed = true}, # Poster Records: year it was on an Original Poster
+    {name = "months", feed = true}, # Poster Records: month it was on an Original Poster
     {name = "kingdom", feed = true},
     {name = "categories", feed = true},
     {name = "pdfs", feed = true},
+    {name = 'senses', feed = true}, # Fragments: see/hear/touch/taste/smell
+    {name = "when", feed = true}, # Fragments: time of day only - day / night / dawn / dusk
+    {name = "season", feed = true}, # Fragments: months you might expect to encounter it ("November")
 ]
 taxonomy_root = "tags"
 
@@ -51,12 +54,13 @@ socials = []
 #'species'
 menu = [
     { name = "Home", url = "/", weight = 0 },
-    { name = "Species", url = "/species", weight = 1 },
+    { name = "(New) Posters", url = "/posters", weight = 1 },
+    { name = "Species", url = "/species", weight = 2 },
     # { name = "Months", url = "/tags/months", weight = 2 },
-    { name = "Observations", url = "/observations", weight = 2 },
-    { name = "Tags", url = "/tags", weight = 3 },
+    { name = "Observations", url = "/observations", weight = 3 },
+    { name = "Tags", url = "/tags", weight = 4 },
     # { name = "/projects", url = "/projects", weight = 2 },
-    { name = "About", url = "/about", weight = 4 },
+    { name = "About", url = "/about", weight = 5 },
 ]
 
 stylesheets = ["risinghurst.css", "sortable-theme-minimal.css"]

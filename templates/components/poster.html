@@ -1,0 +1,143 @@
+{#
+  New Poster blocks. A poster lists them in front matter, in display order:
+
+    [[extra.blocks]]
+    type = "recent_sightings"   # | "senses" | "archive"
+    ...
+
+  Common options: title, limit, include / exclude (species slugs, e.g. "fox"),
+  size = "mini" | "compact" | "full"  (card size; default columns: 3 / 2 / 1)
+  columns = 4                         (optional: override the number of columns)
+    mini:    photo + name + note
+    compact: adds the Wikipedia one-line description (or the Fragment's text)
+    full:    adds the whole Wikipedia summary; use with a small limit
+  `poster_date` is the poster page's date (YYYY-MM-DD); blocks default to its month.
+#}
+
+
+{#
+  recent_sightings: Observations from the previous month (or `month = "YYYY-MM"`),
+  one entry per Species, Species with a photo first.
+#}
+{% component poster.recent_sightings(block: map, poster_date: string) %}
+{% set month = block.month | default(value="") %}
+{% if not month %}
+    {% set y = poster_date | date(format="%Y") | int %}
+    {% set m = poster_date | date(format="%m") | int %}
+    {% if m == 1 %}{% set y = y - 1 %}{% set m = 12 %}{% else %}{% set m = m - 1 %}{% endif %}
+    {% set month = y ~ "-" %}{% if m < 10 %}{% set month = month ~ "0" %}{% endif %}{% set month = month ~ m %}
+{% endif %}
+{% set limit = block.limit | default(value=6) %}
+{% set size = block.size | default(value="mini") %}
+{% set exclude = block.exclude | default(value=[]) %}
+{% set data = load_data(path="data/observations/" ~ month ~ ".json", required=false) %}
+{% set wiki = load_data(path="data/wiki.json", required=false) or {} %}
+{% set index = load_data(path="data/species.json", required=false) or {} %}
+{% set label = (month ~ "-01") | date(format="%B") %}
+<section class="poster-block poster-block--sightings">
+    <h2>{{ block.title | default(value="Recently sightings") }}</h2>
+    {% if not data %}
+        <p class="data-missing">No observation data for {{ month }}.</p>
+    {% else %}
+    <div class="poster-cards poster-cards--{{ size }}"{% if block.columns %} style="grid-template-columns: repeat({{ block.columns }}, 1fr)"{% endif %}>
+    {% set_global shown = 0 %}
+    {% for pass in ["photo", "no-photo"] %}
+        {% for sp in data.species %}
+            {% set sci = sp.scientific_name %}
+            {% set has_photo = sci in wiki and wiki[sci].thumbnail %}
+            {% set slug = "" %}{% if sci in index %}{% set slug = index[sci].slug %}{% endif %}
+            {% if shown < limit and slug not in exclude and ((pass == "photo" and has_photo) or (pass == "no-photo" and not has_photo)) %}
+                {% set_global shown = shown + 1 %}
+                {% set note = sp.observations[0].observed_on | date(format="%-d %b") %}
+                {% if sp.count > 1 %}{% set note = note ~ " · seen " ~ sp.count ~ " times" %}{% endif %}
+                {{<species.card sci={sci} size={size} note={note} />}}
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+    </div>
+    {% if (data.species | length) > shown %}
+    <p class="poster-more">…and {{ (data.species | length) - shown }} more on the website.</p>
+    {% endif %}
+    {% endif %}
+</section>
+{% endcomponent poster.recent_sightings %}
+
+
+{#
+  senses: Fragments tagged with `senses`, matching `when` and `season` (season defaults to
+  the poster's month). A Fragment with no `when`/`season` tags matches any time/month.
+  One Fragment per Species; `include` species come first.
+#}
+{% component poster.senses(block: map, poster_date: string) %}
+{% set sense = block.senses %}
+{% set when = block.when | default(value="") %}
+{% set season = block.season | default(value=poster_date | date(format="%B")) %}
+{% set limit = block.limit | default(value=4) %}
+{% set size = block.size | default(value="compact") %}
+{% set include = block.include | default(value=[]) %}
+{% set exclude = block.exclude | default(value=[]) %}
+{% set default_title = "Things you might " ~ sense %}
+{% if when == "day" %}{% set default_title = default_title ~ " during the day" %}{% elif when %}{% set default_title = default_title ~ " at " ~ when %}{% endif %}
+{% set default_title = default_title ~ " in " ~ season %}
+{% set term = get_taxonomy_term(kind="senses", term=sense, required=false) %}
+<section class="poster-block poster-block--senses">
+    <h2>{{ block.title | default(value=default_title) }}</h2>
+    <div class="poster-cards poster-cards--{{ size }}"{% if block.columns %} style="grid-template-columns: repeat({{ block.columns }}, 1fr)"{% endif %}>
+    {% set_global shown = 0 %}
+    {% set_global seen = "|" %}
+    {% if term %}
+    {% for pass in ["include", "rest"] %}
+        {% for f in term.pages %}
+            {% set slug = f.relative_path | split(pat="/") | nth(n=1) %}
+            {% set f_when = f.taxonomies.when | default(value=[]) %}
+            {% set f_season = f.taxonomies.season | default(value=[]) %}
+            {% set ok_when = not when or not f_when or when in f_when %}
+            {% set ok_season = not f_season or season in f_season %}
+            {% set ok_pass = (pass == "include" and slug in include) or (pass == "rest" and slug not in include and slug not in exclude) %}
+            {% if shown < limit and ok_when and ok_season and ok_pass and ("|" ~ slug ~ "|") not in seen %}
+                {% set_global shown = shown + 1 %}
+                {% set_global seen = seen ~ slug ~ "|" %}
+                {{<species.fragment_card fragment={f} size={size} />}}
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+    {% endif %}
+    {% if shown == 0 %}<p class="data-missing">No matching notes yet: add a Fragment tagged senses = ["{{ sense }}"].</p>{% endif %}
+    </div>
+</section>
+{% endcomponent poster.senses %}
+
+
+{#
+  archive: Species on the Original Posters in a given month (default: the poster's month).
+#}
+{% component poster.archive(block: map, poster_date: string) %}
+{% set month_name = block.month | default(value=poster_date | date(format="%B")) %}
+{% set limit = block.limit | default(value=6) %}
+{% set size = block.size | default(value="mini") %}
+{% set include = block.include | default(value=[]) %}
+{% set exclude = block.exclude | default(value=[]) %}
+{% set wiki = load_data(path="data/wiki.json", required=false) or {} %}
+{% set term = get_taxonomy_term(kind="months", term=month_name, required=false) %}
+<section class="poster-block poster-block--archive">
+    <h2>{{ block.title | default(value="On Peter and Barbara's " ~ month_name ~ " posters") }}</h2>
+    <div class="poster-cards poster-cards--{{ size }}"{% if block.columns %} style="grid-template-columns: repeat({{ block.columns }}, 1fr)"{% endif %}>
+    {% set_global shown = 0 %}
+    {% if term %}
+    {% for pass in ["include", "photo", "no-photo"] %}
+        {% for p in term.pages %}
+            {% set sci = p.extra.scientific_name %}
+            {% set has_photo = sci in wiki and wiki[sci].thumbnail %}
+            {% set ok_pass = (pass == "include" and p.slug in include)
+                or (pass == "photo" and p.slug not in include and has_photo)
+                or (pass == "no-photo" and p.slug not in include and not has_photo) %}
+            {% if shown < limit and ok_pass and p.slug not in exclude %}
+                {% set_global shown = shown + 1 %}
+                {{<species.card sci={sci} size={size} title={p.title} note={p.taxonomies.years | join(sep=", ")} />}}
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+    {% endif %}
+    </div>
+</section>
+{% endcomponent poster.archive %}
